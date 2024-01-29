@@ -4,6 +4,7 @@ Mirrors the production timeseries API in the crucial respects, but won't be as f
 
 ONLY works afer the first three variables in MockAPI.__init__ are populated.
 '''
+import os
 
 from typing import Sequence, Tuple
 
@@ -22,9 +23,13 @@ class MockApi:
                 A call to iter_test serves all rows of all dataframes with the current group ID value.
             export_group_id_column: if true, the dataframes iter_test serves will include the group_id_column values.
         '''
-        self.input_paths: Sequence[str] =
-        self.group_id_column: str =
-        self.export_group_id_column: bool =
+        DIR = os.path.dirname(os.path.abspath(__file__))
+        TEST_DIR = os.path.join(DIR, "example_test_files")
+        input_files = ["test.csv", "revealed_targets.csv", "client.csv", "historical_weather.csv", "forecast_weather.csv", "electricity_prices.csv", "gas_prices.csv", "sample_submission.csv"]
+
+        self.input_paths: Sequence[str] = [os.path.join(TEST_DIR, fn) for fn in input_files]
+        self.group_id_column: str = "data_block_id"
+        self.export_group_id_column: bool = True
         # iter_test is only designed to support at least two dataframes, such as test and sample_submission
         assert len(self.input_paths) >= 2
 
