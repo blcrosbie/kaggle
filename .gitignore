@@ -4,3 +4,6 @@
 */venv
 *.csv
 *.so
+*__pycache__/*
+*.DS_Store
+*.gpkg
