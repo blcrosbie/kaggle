@@ -88,7 +88,15 @@ def calculate_elevation_angle(local_time, day_of_year, longitude, latitude, utc_
     
     sines = math.sin(math.radians(deca)) * math.sin(math.radians(latitude))
     cosines = math.cos(math.radians(latitude)) * math.cos(math.radians(latitude)) * math.cos(math.radians(HRA))
-    elevation = math.degrees(math.asin(sines + cosines))
+    try:
+        elevation = math.degrees(math.asin(sines + cosines))
+    except Exception as e:
+        print(e)
+        print(local_time, day_of_year, longitude, latitude, utc_offset)
+        print(sines)
+        print(cosines)
+        print(deca)
+        print(HRA)
 
     return elevation
 
@@ -113,7 +121,7 @@ def convert_int_to_time(hour_int_val):
     minute_value = (hour_int_val - actual_hour) * 60
     actual_minute = math.floor(minute_value)
     second_value = (minute_value - actual_minute) * 60
-    actual_second = round(second_value)
+    actual_second = max(math.floor(second_value), 59)
     
     return datetime.time(hour=actual_hour, minute=actual_minute, second=actual_second)
     
