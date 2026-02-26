@@ -1,0 +1,6427 @@
+{
+  "Cities.csv": {
+    "file": "Cities.csv",
+    "shape": {
+      "rows": 509,
+      "columns": 3
+    },
+    "columns": [
+      "CityID",
+      "City",
+      "State"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 0.065,
+    "season_range": {
+      "min": null,
+      "max": null
+    },
+    "column_profiles": {
+      "CityID": {
+        "dtype": "int64",
+        "non_null": 509,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 509,
+        "numeric_stats": {
+          "min": 4001.0,
+          "max": 4531.0,
+          "mean": 4260.630648330059,
+          "std": 154.403962977769
+        }
+      },
+      "City": {
+        "dtype": "object",
+        "non_null": 509,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 479,
+        "top_values": {
+          "Springfield": 4,
+          "Charleston": 4,
+          "Greenville": 3,
+          "Kent": 2,
+          "Athens": 2
+        }
+      },
+      "State": {
+        "dtype": "object",
+        "non_null": 509,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 68,
+        "top_values": {
+          "NY": 32,
+          "CA": 32,
+          "FL": 32,
+          "TX": 30,
+          "NC": 19
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "CityID": 4001,
+        "City": "Abilene",
+        "State": "TX"
+      },
+      {
+        "CityID": 4002,
+        "City": "Akron",
+        "State": "OH"
+      },
+      {
+        "CityID": 4003,
+        "City": "Albany",
+        "State": "NY"
+      },
+      {
+        "CityID": 4004,
+        "City": "Albuquerque",
+        "State": "NM"
+      },
+      {
+        "CityID": 4005,
+        "City": "Allentown",
+        "State": "PA"
+      }
+    ]
+  },
+  "Conferences.csv": {
+    "file": "Conferences.csv",
+    "shape": {
+      "rows": 51,
+      "columns": 2
+    },
+    "columns": [
+      "ConfAbbrev",
+      "Description"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 0.007,
+    "season_range": {
+      "min": null,
+      "max": null
+    },
+    "column_profiles": {
+      "ConfAbbrev": {
+        "dtype": "object",
+        "non_null": 51,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 51,
+        "top_values": {
+          "a_sun": 1,
+          "big_west": 1,
+          "aac": 1,
+          "acc": 1,
+          "aec": 1
+        }
+      },
+      "Description": {
+        "dtype": "object",
+        "non_null": 51,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 51,
+        "top_values": {
+          "Atlantic Sun Conference": 1,
+          "Big West Conference": 1,
+          "American Athletic Conference": 1,
+          "Atlantic Coast Conference": 1,
+          "America East Conference": 1
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "ConfAbbrev": "a_sun",
+        "Description": "Atlantic Sun Conference"
+      },
+      {
+        "ConfAbbrev": "a_ten",
+        "Description": "Atlantic 10 Conference"
+      },
+      {
+        "ConfAbbrev": "aac",
+        "Description": "American Athletic Conference"
+      },
+      {
+        "ConfAbbrev": "acc",
+        "Description": "Atlantic Coast Conference"
+      },
+      {
+        "ConfAbbrev": "aec",
+        "Description": "America East Conference"
+      }
+    ]
+  },
+  "MConferenceTourneyGames.csv": {
+    "file": "MConferenceTourneyGames.csv",
+    "shape": {
+      "rows": 6793,
+      "columns": 5
+    },
+    "columns": [
+      "Season",
+      "ConfAbbrev",
+      "DayNum",
+      "WTeamID",
+      "LTeamID"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 0.611,
+    "season_range": {
+      "min": 2001,
+      "max": 2025
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 6793,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 25,
+        "numeric_stats": {
+          "min": 2001.0,
+          "max": 2025.0,
+          "mean": 2013.3104666568527,
+          "std": 7.186254893646076
+        }
+      },
+      "ConfAbbrev": {
+        "dtype": "object",
+        "non_null": 6793,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 36,
+        "top_values": {
+          "sec": 289,
+          "a_ten": 288,
+          "acc": 286,
+          "big_ten": 276,
+          "cusa": 268
+        }
+      },
+      "DayNum": {
+        "dtype": "int64",
+        "non_null": 6793,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 17,
+        "numeric_stats": {
+          "min": 115.0,
+          "max": 132.0,
+          "mean": 126.7759458265862,
+          "std": 3.255352337006673
+        }
+      },
+      "WTeamID": {
+        "dtype": "int64",
+        "non_null": 6793,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 362,
+        "numeric_stats": {
+          "min": 1101.0,
+          "max": 1478.0,
+          "mean": 1288.803474164581,
+          "std": 105.0531896226078
+        }
+      },
+      "LTeamID": {
+        "dtype": "int64",
+        "non_null": 6793,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 365,
+        "numeric_stats": {
+          "min": 1101.0,
+          "max": 1478.0,
+          "mean": 1286.7766818784041,
+          "std": 104.95858473316349
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 2001,
+        "ConfAbbrev": "ovc",
+        "DayNum": 120,
+        "WTeamID": 1122,
+        "LTeamID": 1369
+      },
+      {
+        "Season": 2001,
+        "ConfAbbrev": "ovc",
+        "DayNum": 120,
+        "WTeamID": 1183,
+        "LTeamID": 1287
+      },
+      {
+        "Season": 2001,
+        "ConfAbbrev": "ovc",
+        "DayNum": 120,
+        "WTeamID": 1293,
+        "LTeamID": 1398
+      },
+      {
+        "Season": 2001,
+        "ConfAbbrev": "ovc",
+        "DayNum": 120,
+        "WTeamID": 1399,
+        "LTeamID": 1404
+      },
+      {
+        "Season": 2001,
+        "ConfAbbrev": "a_sun",
+        "DayNum": 121,
+        "WTeamID": 1194,
+        "LTeamID": 1144
+      }
+    ]
+  },
+  "MGameCities.csv": {
+    "file": "MGameCities.csv",
+    "shape": {
+      "rows": 90684,
+      "columns": 6
+    },
+    "columns": [
+      "Season",
+      "DayNum",
+      "WTeamID",
+      "LTeamID",
+      "CRType",
+      "CityID"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 8.993,
+    "season_range": {
+      "min": 2010,
+      "max": 2026
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 90684,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 17,
+        "numeric_stats": {
+          "min": 2010.0,
+          "max": 2026.0,
+          "mean": 2017.8764941996383,
+          "std": 4.851268405869183
+        }
+      },
+      "DayNum": {
+        "dtype": "int64",
+        "non_null": 90684,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 155,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 154.0,
+          "mean": 70.44395924308589,
+          "std": 37.490728972576406
+        }
+      },
+      "WTeamID": {
+        "dtype": "int64",
+        "non_null": 90684,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 370,
+        "numeric_stats": {
+          "min": 1101.0,
+          "max": 1481.0,
+          "mean": 1289.2625711261082,
+          "std": 105.36442953871767
+        }
+      },
+      "LTeamID": {
+        "dtype": "int64",
+        "non_null": 90684,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 370,
+        "numeric_stats": {
+          "min": 1101.0,
+          "max": 1481.0,
+          "mean": 1283.9692558775528,
+          "std": 105.24958897735046
+        }
+      },
+      "CRType": {
+        "dtype": "object",
+        "non_null": 90684,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 3,
+        "top_values": {
+          "Regular": 88701,
+          "NCAA": 1001,
+          "Secondary": 982
+        }
+      },
+      "CityID": {
+        "dtype": "int64",
+        "non_null": 90684,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 454,
+        "numeric_stats": {
+          "min": 4001.0,
+          "max": 4528.0,
+          "mean": 4189.186747386529,
+          "std": 113.96062182955573
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 2010,
+        "DayNum": 7,
+        "WTeamID": 1143,
+        "LTeamID": 1293,
+        "CRType": "Regular",
+        "CityID": 4027
+      },
+      {
+        "Season": 2010,
+        "DayNum": 7,
+        "WTeamID": 1314,
+        "LTeamID": 1198,
+        "CRType": "Regular",
+        "CityID": 4061
+      },
+      {
+        "Season": 2010,
+        "DayNum": 7,
+        "WTeamID": 1326,
+        "LTeamID": 1108,
+        "CRType": "Regular",
+        "CityID": 4080
+      },
+      {
+        "Season": 2010,
+        "DayNum": 7,
+        "WTeamID": 1393,
+        "LTeamID": 1107,
+        "CRType": "Regular",
+        "CityID": 4340
+      },
+      {
+        "Season": 2010,
+        "DayNum": 9,
+        "WTeamID": 1143,
+        "LTeamID": 1178,
+        "CRType": "Regular",
+        "CityID": 4027
+      }
+    ]
+  },
+  "MMasseyOrdinals.csv": {
+    "file": "MMasseyOrdinals.csv",
+    "shape": {
+      "rows": 5761702,
+      "columns": 5
+    },
+    "columns": [
+      "Season",
+      "RankingDayNum",
+      "SystemName",
+      "TeamID",
+      "OrdinalRank"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 505.187,
+    "season_range": {
+      "min": 2003,
+      "max": 2026
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 5761702,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 24,
+        "numeric_stats": {
+          "min": 2003.0,
+          "max": 2026.0,
+          "mean": 2016.007644789682,
+          "std": 6.318970121929766
+        }
+      },
+      "RankingDayNum": {
+        "dtype": "int64",
+        "non_null": 5761702,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 91,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 133.0,
+          "mean": 84.27617412354891,
+          "std": 33.364706470818554
+        }
+      },
+      "SystemName": {
+        "dtype": "object",
+        "non_null": 5761702,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 196,
+        "top_values": {
+          "MOR": 148285,
+          "POM": 145794,
+          "DOK": 132498,
+          "SAG": 130371,
+          "MAS": 122192
+        }
+      },
+      "TeamID": {
+        "dtype": "int64",
+        "non_null": 5761702,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 372,
+        "numeric_stats": {
+          "min": 1101.0,
+          "max": 1481.0,
+          "mean": 1286.009875727693,
+          "std": 105.39139508945973
+        }
+      },
+      "OrdinalRank": {
+        "dtype": "int64",
+        "non_null": 5761702,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 365,
+        "numeric_stats": {
+          "min": 1.0,
+          "max": 365.0,
+          "mean": 174.17779364500282,
+          "std": 101.72950003645923
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 2003,
+        "RankingDayNum": 35,
+        "SystemName": "SEL",
+        "TeamID": 1102,
+        "OrdinalRank": 159
+      },
+      {
+        "Season": 2003,
+        "RankingDayNum": 35,
+        "SystemName": "SEL",
+        "TeamID": 1103,
+        "OrdinalRank": 229
+      },
+      {
+        "Season": 2003,
+        "RankingDayNum": 35,
+        "SystemName": "SEL",
+        "TeamID": 1104,
+        "OrdinalRank": 12
+      },
+      {
+        "Season": 2003,
+        "RankingDayNum": 35,
+        "SystemName": "SEL",
+        "TeamID": 1105,
+        "OrdinalRank": 314
+      },
+      {
+        "Season": 2003,
+        "RankingDayNum": 35,
+        "SystemName": "SEL",
+        "TeamID": 1106,
+        "OrdinalRank": 260
+      }
+    ]
+  },
+  "MNCAATourneyCompactResults.csv": {
+    "file": "MNCAATourneyCompactResults.csv",
+    "shape": {
+      "rows": 2585,
+      "columns": 8
+    },
+    "columns": [
+      "Season",
+      "DayNum",
+      "WTeamID",
+      "WScore",
+      "LTeamID",
+      "LScore",
+      "WLoc",
+      "NumOT"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 0.281,
+    "season_range": {
+      "min": 1985,
+      "max": 2025
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 2585,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 40,
+        "numeric_stats": {
+          "min": 1985.0,
+          "max": 2025.0,
+          "mean": 2004.9087040618956,
+          "std": 11.764136712911824
+        }
+      },
+      "DayNum": {
+        "dtype": "int64",
+        "non_null": 2585,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 15,
+        "numeric_stats": {
+          "min": 134.0,
+          "max": 154.0,
+          "mean": 139.1458413926499,
+          "std": 4.218491735356798
+        }
+      },
+      "WTeamID": {
+        "dtype": "int64",
+        "non_null": 2585,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 219,
+        "numeric_stats": {
+          "min": 1101.0,
+          "max": 1463.0,
+          "mean": 1283.862669245648,
+          "std": 101.2719804669686
+        }
+      },
+      "WScore": {
+        "dtype": "int64",
+        "non_null": 2585,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 78,
+        "numeric_stats": {
+          "min": 43.0,
+          "max": 149.0,
+          "mean": 76.95164410058027,
+          "std": 11.726352191738068
+        }
+      },
+      "LTeamID": {
+        "dtype": "int64",
+        "non_null": 2585,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 313,
+        "numeric_stats": {
+          "min": 1101.0,
+          "max": 1471.0,
+          "mean": 1291.1249516441005,
+          "std": 103.57981891125534
+        }
+      },
+      "LScore": {
+        "dtype": "int64",
+        "non_null": 2585,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 73,
+        "numeric_stats": {
+          "min": 29.0,
+          "max": 115.0,
+          "mean": 65.12998065764023,
+          "std": 11.023587265464743
+        }
+      },
+      "WLoc": {
+        "dtype": "object",
+        "non_null": 2585,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 1,
+        "top_values": {
+          "N": 2585
+        }
+      },
+      "NumOT": {
+        "dtype": "int64",
+        "non_null": 2585,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 4,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 3.0,
+          "mean": 0.06537717601547388,
+          "std": 0.27537706857475197
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 1985,
+        "DayNum": 136,
+        "WTeamID": 1116,
+        "WScore": 63,
+        "LTeamID": 1234,
+        "LScore": 54,
+        "WLoc": "N",
+        "NumOT": 0
+      },
+      {
+        "Season": 1985,
+        "DayNum": 136,
+        "WTeamID": 1120,
+        "WScore": 59,
+        "LTeamID": 1345,
+        "LScore": 58,
+        "WLoc": "N",
+        "NumOT": 0
+      },
+      {
+        "Season": 1985,
+        "DayNum": 136,
+        "WTeamID": 1207,
+        "WScore": 68,
+        "LTeamID": 1250,
+        "LScore": 43,
+        "WLoc": "N",
+        "NumOT": 0
+      },
+      {
+        "Season": 1985,
+        "DayNum": 136,
+        "WTeamID": 1229,
+        "WScore": 58,
+        "LTeamID": 1425,
+        "LScore": 55,
+        "WLoc": "N",
+        "NumOT": 0
+      },
+      {
+        "Season": 1985,
+        "DayNum": 136,
+        "WTeamID": 1242,
+        "WScore": 49,
+        "LTeamID": 1325,
+        "LScore": 38,
+        "WLoc": "N",
+        "NumOT": 0
+      }
+    ]
+  },
+  "MNCAATourneyDetailedResults.csv": {
+    "file": "MNCAATourneyDetailedResults.csv",
+    "shape": {
+      "rows": 1449,
+      "columns": 34
+    },
+    "columns": [
+      "Season",
+      "DayNum",
+      "WTeamID",
+      "WScore",
+      "LTeamID",
+      "LScore",
+      "WLoc",
+      "NumOT",
+      "WFGM",
+      "WFGA",
+      "WFGM3",
+      "WFGA3",
+      "WFTM",
+      "WFTA",
+      "WOR",
+      "WDR",
+      "WAst",
+      "WTO",
+      "WStl",
+      "WBlk",
+      "WPF",
+      "LFGM",
+      "LFGA",
+      "LFGM3",
+      "LFGA3",
+      "LFTM",
+      "LFTA",
+      "LOR",
+      "LDR",
+      "LAst",
+      "LTO",
+      "LStl",
+      "LBlk",
+      "LPF"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 0.445,
+    "season_range": {
+      "min": 2003,
+      "max": 2025
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 22,
+        "numeric_stats": {
+          "min": 2003.0,
+          "max": 2025.0,
+          "mean": 2013.8419599723948,
+          "std": 6.639431474117434
+        }
+      },
+      "DayNum": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 15,
+        "numeric_stats": {
+          "min": 134.0,
+          "max": 154.0,
+          "mean": 139.08074534161491,
+          "std": 4.2329894216832535
+        }
+      },
+      "WTeamID": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 180,
+        "numeric_stats": {
+          "min": 1101.0,
+          "max": 1463.0,
+          "mean": 1287.4761904761904,
+          "std": 103.28551396697526
+        }
+      },
+      "WScore": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 64,
+        "numeric_stats": {
+          "min": 47.0,
+          "max": 121.0,
+          "mean": 75.64872325741891,
+          "std": 10.757311535720145
+        }
+      },
+      "LTeamID": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 273,
+        "numeric_stats": {
+          "min": 1101.0,
+          "max": 1471.0,
+          "mean": 1292.5189786059352,
+          "std": 105.99170498167709
+        }
+      },
+      "LScore": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 65,
+        "numeric_stats": {
+          "min": 29.0,
+          "max": 105.0,
+          "mean": 63.908902691511386,
+          "std": 10.380668096748957
+        }
+      },
+      "WLoc": {
+        "dtype": "object",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 1,
+        "top_values": {
+          "N": 1449
+        }
+      },
+      "NumOT": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 3,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 2.0,
+          "mean": 0.06418219461697723,
+          "std": 0.2793924148546826
+        }
+      },
+      "WFGM": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 30,
+        "numeric_stats": {
+          "min": 13.0,
+          "max": 44.0,
+          "mean": 26.56935817805383,
+          "std": 4.737390904814347
+        }
+      },
+      "WFGA": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 46,
+        "numeric_stats": {
+          "min": 34.0,
+          "max": 84.0,
+          "mean": 55.982056590752244,
+          "std": 7.228298319538484
+        }
+      },
+      "WFGM3": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 20,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 25.0,
+          "mean": 7.190476190476191,
+          "std": 3.0650665557729875
+        }
+      },
+      "WFGA3": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 39,
+        "numeric_stats": {
+          "min": 4.0,
+          "max": 51.0,
+          "mean": 18.87784679089027,
+          "std": 5.92199400878173
+        }
+      },
+      "WFTM": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 38,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 38.0,
+          "mean": 15.319530710835059,
+          "std": 5.969828449236836
+        }
+      },
+      "WFTA": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 47,
+        "numeric_stats": {
+          "min": 1.0,
+          "max": 48.0,
+          "mean": 20.993788819875775,
+          "std": 7.5828273610088095
+        }
+      },
+      "WOR": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 26,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 26.0,
+          "mean": 10.334023464458246,
+          "std": 4.003825229240146
+        }
+      },
+      "WDR": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 31,
+        "numeric_stats": {
+          "min": 13.0,
+          "max": 43.0,
+          "mean": 25.964113181504487,
+          "std": 4.92107135602081
+        }
+      },
+      "WAst": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 27,
+        "numeric_stats": {
+          "min": 3.0,
+          "max": 29.0,
+          "mean": 14.453416149068323,
+          "std": 4.426432532583398
+        }
+      },
+      "WTO": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 26,
+        "numeric_stats": {
+          "min": 2.0,
+          "max": 28.0,
+          "mean": 11.185645272601795,
+          "std": 3.7719030161222142
+        }
+      },
+      "WStl": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 18,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 20.0,
+          "mean": 6.352657004830918,
+          "std": 2.9518222050925678
+        }
+      },
+      "WBlk": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 15,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 15.0,
+          "mean": 3.9855072463768115,
+          "std": 2.4812411754681083
+        }
+      },
+      "WPF": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 26,
+        "numeric_stats": {
+          "min": 5.0,
+          "max": 30.0,
+          "mean": 16.185645272601793,
+          "std": 3.8562804322133553
+        }
+      },
+      "LFGM": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 26,
+        "numeric_stats": {
+          "min": 11.0,
+          "max": 36.0,
+          "mean": 23.012422360248447,
+          "std": 4.125263795140824
+        }
+      },
+      "LFGA": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 46,
+        "numeric_stats": {
+          "min": 37.0,
+          "max": 85.0,
+          "mean": 58.141476880607314,
+          "std": 7.330873808813155
+        }
+      },
+      "LFGM3": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 18,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 18.0,
+          "mean": 6.325051759834369,
+          "std": 2.7619530059089255
+        }
+      },
+      "LFGA3": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 37,
+        "numeric_stats": {
+          "min": 5.0,
+          "max": 42.0,
+          "mean": 20.9296066252588,
+          "std": 5.856291174715443
+        }
+      },
+      "LFTM": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 32,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 31.0,
+          "mean": 11.559006211180124,
+          "std": 5.1012676472016985
+        }
+      },
+      "LFTA": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 39,
+        "numeric_stats": {
+          "min": 2.0,
+          "max": 45.0,
+          "mean": 16.466528640441684,
+          "std": 6.600928416988208
+        }
+      },
+      "LOR": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 28,
+        "numeric_stats": {
+          "min": 1.0,
+          "max": 29.0,
+          "mean": 10.657004830917874,
+          "std": 4.221797177684754
+        }
+      },
+      "LDR": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 29,
+        "numeric_stats": {
+          "min": 8.0,
+          "max": 42.0,
+          "mean": 21.3567977915804,
+          "std": 4.470632806950347
+        }
+      },
+      "LAst": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 22,
+        "numeric_stats": {
+          "min": 2.0,
+          "max": 23.0,
+          "mean": 11.44927536231884,
+          "std": 3.678604120162988
+        }
+      },
+      "LTO": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 24,
+        "numeric_stats": {
+          "min": 3.0,
+          "max": 27.0,
+          "mean": 11.856452726017944,
+          "std": 3.88403572856301
+        }
+      },
+      "LStl": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 18,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 19.0,
+          "mean": 5.700483091787439,
+          "std": 2.6386954835408596
+        }
+      },
+      "LBlk": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 13,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 13.0,
+          "mean": 2.9289164941338854,
+          "std": 2.0164513984550707
+        }
+      },
+      "LPF": {
+        "dtype": "int64",
+        "non_null": 1449,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 27,
+        "numeric_stats": {
+          "min": 7.0,
+          "max": 33.0,
+          "mean": 18.55624568668047,
+          "std": 4.202707787394485
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 2003,
+        "DayNum": 134,
+        "WTeamID": 1421,
+        "WScore": 92,
+        "LTeamID": 1411,
+        "LScore": 84,
+        "WLoc": "N",
+        "NumOT": 1,
+        "WFGM": 32,
+        "WFGA": 69,
+        "WFGM3": 11,
+        "WFGA3": 29,
+        "WFTM": 17,
+        "WFTA": 26,
+        "WOR": 14,
+        "WDR": 30,
+        "WAst": 17,
+        "WTO": 12,
+        "WStl": 5,
+        "WBlk": 3,
+        "WPF": 22,
+        "LFGM": 29,
+        "LFGA": 67,
+        "LFGM3": 12,
+        "LFGA3": 31,
+        "LFTM": 14,
+        "LFTA": 31,
+        "LOR": 17,
+        "LDR": 28,
+        "LAst": 16,
+        "LTO": 15,
+        "LStl": 5,
+        "LBlk": 0,
+        "LPF": 22
+      },
+      {
+        "Season": 2003,
+        "DayNum": 136,
+        "WTeamID": 1112,
+        "WScore": 80,
+        "LTeamID": 1436,
+        "LScore": 51,
+        "WLoc": "N",
+        "NumOT": 0,
+        "WFGM": 31,
+        "WFGA": 66,
+        "WFGM3": 7,
+        "WFGA3": 23,
+        "WFTM": 11,
+        "WFTA": 14,
+        "WOR": 11,
+        "WDR": 36,
+        "WAst": 22,
+        "WTO": 16,
+        "WStl": 10,
+        "WBlk": 7,
+        "WPF": 8,
+        "LFGM": 20,
+        "LFGA": 64,
+        "LFGM3": 4,
+        "LFGA3": 16,
+        "LFTM": 7,
+        "LFTA": 7,
+        "LOR": 8,
+        "LDR": 26,
+        "LAst": 12,
+        "LTO": 17,
+        "LStl": 10,
+        "LBlk": 3,
+        "LPF": 15
+      },
+      {
+        "Season": 2003,
+        "DayNum": 136,
+        "WTeamID": 1113,
+        "WScore": 84,
+        "LTeamID": 1272,
+        "LScore": 71,
+        "WLoc": "N",
+        "NumOT": 0,
+        "WFGM": 31,
+        "WFGA": 59,
+        "WFGM3": 6,
+        "WFGA3": 14,
+        "WFTM": 16,
+        "WFTA": 22,
+        "WOR": 10,
+        "WDR": 27,
+        "WAst": 18,
+        "WTO": 9,
+        "WStl": 7,
+        "WBlk": 4,
+        "WPF": 19,
+        "LFGM": 25,
+        "LFGA": 69,
+        "LFGM3": 7,
+        "LFGA3": 28,
+        "LFTM": 14,
+        "LFTA": 21,
+        "LOR": 20,
+        "LDR": 22,
+        "LAst": 11,
+        "LTO": 12,
+        "LStl": 2,
+        "LBlk": 5,
+        "LPF": 18
+      },
+      {
+        "Season": 2003,
+        "DayNum": 136,
+        "WTeamID": 1141,
+        "WScore": 79,
+        "LTeamID": 1166,
+        "LScore": 73,
+        "WLoc": "N",
+        "NumOT": 0,
+        "WFGM": 29,
+        "WFGA": 53,
+        "WFGM3": 3,
+        "WFGA3": 7,
+        "WFTM": 18,
+        "WFTA": 25,
+        "WOR": 11,
+        "WDR": 20,
+        "WAst": 15,
+        "WTO": 18,
+        "WStl": 13,
+        "WBlk": 1,
+        "WPF": 19,
+        "LFGM": 27,
+        "LFGA": 60,
+        "LFGM3": 7,
+        "LFGA3": 17,
+        "LFTM": 12,
+        "LFTA": 17,
+        "LOR": 14,
+        "LDR": 17,
+        "LAst": 20,
+        "LTO": 21,
+        "LStl": 6,
+        "LBlk": 6,
+        "LPF": 21
+      },
+      {
+        "Season": 2003,
+        "DayNum": 136,
+        "WTeamID": 1143,
+        "WScore": 76,
+        "LTeamID": 1301,
+        "LScore": 74,
+        "WLoc": "N",
+        "NumOT": 1,
+        "WFGM": 27,
+        "WFGA": 64,
+        "WFGM3": 7,
+        "WFGA3": 20,
+        "WFTM": 15,
+        "WFTA": 23,
+        "WOR": 18,
+        "WDR": 20,
+        "WAst": 17,
+        "WTO": 13,
+        "WStl": 8,
+        "WBlk": 2,
+        "WPF": 14,
+        "LFGM": 25,
+        "LFGA": 56,
+        "LFGM3": 9,
+        "LFGA3": 21,
+        "LFTM": 15,
+        "LFTA": 20,
+        "LOR": 10,
+        "LDR": 26,
+        "LAst": 16,
+        "LTO": 14,
+        "LStl": 5,
+        "LBlk": 8,
+        "LPF": 19
+      }
+    ]
+  },
+  "MNCAATourneySeedRoundSlots.csv": {
+    "file": "MNCAATourneySeedRoundSlots.csv",
+    "shape": {
+      "rows": 776,
+      "columns": 5
+    },
+    "columns": [
+      "Seed",
+      "GameRound",
+      "GameSlot",
+      "EarlyDayNum",
+      "LateDayNum"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 0.108,
+    "season_range": {
+      "min": null,
+      "max": null
+    },
+    "column_profiles": {
+      "Seed": {
+        "dtype": "object",
+        "non_null": 776,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 120,
+        "top_values": {
+          "Z16b": 7,
+          "Y11b": 7,
+          "Y12b": 7,
+          "W14a": 7,
+          "W14b": 7
+        }
+      },
+      "GameRound": {
+        "dtype": "int64",
+        "non_null": 776,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 7,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 6.0,
+          "mean": 3.247422680412371,
+          "std": 1.8790851739046226
+        }
+      },
+      "GameSlot": {
+        "dtype": "object",
+        "non_null": 776,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 91,
+        "top_values": {
+          "R6CH": 120,
+          "R5WX": 60,
+          "R5YZ": 60,
+          "R4W1": 30,
+          "R4X1": 30
+        }
+      },
+      "EarlyDayNum": {
+        "dtype": "int64",
+        "non_null": 776,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 7,
+        "numeric_stats": {
+          "min": 134.0,
+          "max": 154.0,
+          "mean": 143.89690721649484,
+          "std": 6.957173376457546
+        }
+      },
+      "LateDayNum": {
+        "dtype": "int64",
+        "non_null": 776,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 7,
+        "numeric_stats": {
+          "min": 135.0,
+          "max": 154.0,
+          "mean": 144.58762886597938,
+          "std": 6.555769804173087
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Seed": "W01",
+        "GameRound": 1,
+        "GameSlot": "R1W1",
+        "EarlyDayNum": 136,
+        "LateDayNum": 137
+      },
+      {
+        "Seed": "W01",
+        "GameRound": 2,
+        "GameSlot": "R2W1",
+        "EarlyDayNum": 138,
+        "LateDayNum": 139
+      },
+      {
+        "Seed": "W01",
+        "GameRound": 3,
+        "GameSlot": "R3W1",
+        "EarlyDayNum": 143,
+        "LateDayNum": 144
+      },
+      {
+        "Seed": "W01",
+        "GameRound": 4,
+        "GameSlot": "R4W1",
+        "EarlyDayNum": 145,
+        "LateDayNum": 146
+      },
+      {
+        "Seed": "W01",
+        "GameRound": 5,
+        "GameSlot": "R5WX",
+        "EarlyDayNum": 152,
+        "LateDayNum": 152
+      }
+    ]
+  },
+  "MNCAATourneySeeds.csv": {
+    "file": "MNCAATourneySeeds.csv",
+    "shape": {
+      "rows": 2626,
+      "columns": 3
+    },
+    "columns": [
+      "Season",
+      "Seed",
+      "TeamID"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 0.191,
+    "season_range": {
+      "min": 1985,
+      "max": 2025
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 2626,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 40,
+        "numeric_stats": {
+          "min": 1985.0,
+          "max": 2025.0,
+          "mean": 2004.9105102817973,
+          "std": 11.765712411049147
+        }
+      },
+      "Seed": {
+        "dtype": "object",
+        "non_null": 2626,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 94,
+        "top_values": {
+          "W01": 40,
+          "W03": 40,
+          "Z15": 40,
+          "W15": 40,
+          "X02": 40
+        }
+      },
+      "TeamID": {
+        "dtype": "int64",
+        "non_null": 2626,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 313,
+        "numeric_stats": {
+          "min": 1101.0,
+          "max": 1471.0,
+          "mean": 1290.5875856816451,
+          "std": 103.59470174959671
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 1985,
+        "Seed": "W01",
+        "TeamID": 1207
+      },
+      {
+        "Season": 1985,
+        "Seed": "W02",
+        "TeamID": 1210
+      },
+      {
+        "Season": 1985,
+        "Seed": "W03",
+        "TeamID": 1228
+      },
+      {
+        "Season": 1985,
+        "Seed": "W04",
+        "TeamID": 1260
+      },
+      {
+        "Season": 1985,
+        "Seed": "W05",
+        "TeamID": 1374
+      }
+    ]
+  },
+  "MNCAATourneySlots.csv": {
+    "file": "MNCAATourneySlots.csv",
+    "shape": {
+      "rows": 2586,
+      "columns": 4
+    },
+    "columns": [
+      "Season",
+      "Slot",
+      "StrongSeed",
+      "WeakSeed"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 0.469,
+    "season_range": {
+      "min": 1985,
+      "max": 2025
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 2586,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 40,
+        "numeric_stats": {
+          "min": 1985.0,
+          "max": 2025.0,
+          "mean": 2004.9149265274555,
+          "std": 11.766116710753781
+        }
+      },
+      "Slot": {
+        "dtype": "object",
+        "non_null": 2586,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 78,
+        "top_values": {
+          "R1W1": 40,
+          "R2X4": 40,
+          "R1X8": 40,
+          "R1W3": 40,
+          "R1W4": 40
+        }
+      },
+      "StrongSeed": {
+        "dtype": "object",
+        "non_null": 2586,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 78,
+        "top_values": {
+          "W01": 40,
+          "R1X4": 40,
+          "X08": 40,
+          "W03": 40,
+          "W04": 40
+        }
+      },
+      "WeakSeed": {
+        "dtype": "object",
+        "non_null": 2586,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 78,
+        "top_values": {
+          "W16": 40,
+          "R1X5": 40,
+          "X09": 40,
+          "W14": 40,
+          "W13": 40
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 1985,
+        "Slot": "R1W1",
+        "StrongSeed": "W01",
+        "WeakSeed": "W16"
+      },
+      {
+        "Season": 1985,
+        "Slot": "R1W2",
+        "StrongSeed": "W02",
+        "WeakSeed": "W15"
+      },
+      {
+        "Season": 1985,
+        "Slot": "R1W3",
+        "StrongSeed": "W03",
+        "WeakSeed": "W14"
+      },
+      {
+        "Season": 1985,
+        "Slot": "R1W4",
+        "StrongSeed": "W04",
+        "WeakSeed": "W13"
+      },
+      {
+        "Season": 1985,
+        "Slot": "R1W5",
+        "StrongSeed": "W05",
+        "WeakSeed": "W12"
+      }
+    ]
+  },
+  "MRegularSeasonCompactResults.csv": {
+    "file": "MRegularSeasonCompactResults.csv",
+    "shape": {
+      "rows": 196823,
+      "columns": 8
+    },
+    "columns": [
+      "Season",
+      "DayNum",
+      "WTeamID",
+      "WScore",
+      "LTeamID",
+      "LScore",
+      "WLoc",
+      "NumOT"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 21.399,
+    "season_range": {
+      "min": 1985,
+      "max": 2026
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 196823,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 42,
+        "numeric_stats": {
+          "min": 1985.0,
+          "max": 2026.0,
+          "mean": 2006.7693816271471,
+          "std": 11.880056051437464
+        }
+      },
+      "DayNum": {
+        "dtype": "int64",
+        "non_null": 196823,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 133,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 132.0,
+          "mean": 73.3415048038085,
+          "std": 34.39167260829811
+        }
+      },
+      "WTeamID": {
+        "dtype": "int64",
+        "non_null": 196823,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 381,
+        "numeric_stats": {
+          "min": 1101.0,
+          "max": 1481.0,
+          "mean": 1287.741325962921,
+          "std": 105.01541383939806
+        }
+      },
+      "WScore": {
+        "dtype": "int64",
+        "non_null": 196823,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 130,
+        "numeric_stats": {
+          "min": 34.0,
+          "max": 186.0,
+          "mean": 76.956671730438,
+          "std": 11.834845266863635
+        }
+      },
+      "LTeamID": {
+        "dtype": "int64",
+        "non_null": 196823,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 381,
+        "numeric_stats": {
+          "min": 1101.0,
+          "max": 1481.0,
+          "mean": 1283.521260218572,
+          "std": 105.21381003966046
+        }
+      },
+      "LScore": {
+        "dtype": "int64",
+        "non_null": 196823,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 119,
+        "numeric_stats": {
+          "min": 20.0,
+          "max": 150.0,
+          "mean": 64.85628204020871,
+          "std": 11.202677038029787
+        }
+      },
+      "WLoc": {
+        "dtype": "object",
+        "non_null": 196823,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 3,
+        "top_values": {
+          "H": 116270,
+          "A": 60435,
+          "N": 20118
+        }
+      },
+      "NumOT": {
+        "dtype": "int64",
+        "non_null": 196823,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 7,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 6.0,
+          "mean": 0.04937939163614009,
+          "std": 0.25992098741216835
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 1985,
+        "DayNum": 20,
+        "WTeamID": 1228,
+        "WScore": 81,
+        "LTeamID": 1328,
+        "LScore": 64,
+        "WLoc": "N",
+        "NumOT": 0
+      },
+      {
+        "Season": 1985,
+        "DayNum": 25,
+        "WTeamID": 1106,
+        "WScore": 77,
+        "LTeamID": 1354,
+        "LScore": 70,
+        "WLoc": "H",
+        "NumOT": 0
+      },
+      {
+        "Season": 1985,
+        "DayNum": 25,
+        "WTeamID": 1112,
+        "WScore": 63,
+        "LTeamID": 1223,
+        "LScore": 56,
+        "WLoc": "H",
+        "NumOT": 0
+      },
+      {
+        "Season": 1985,
+        "DayNum": 25,
+        "WTeamID": 1165,
+        "WScore": 70,
+        "LTeamID": 1432,
+        "LScore": 54,
+        "WLoc": "H",
+        "NumOT": 0
+      },
+      {
+        "Season": 1985,
+        "DayNum": 25,
+        "WTeamID": 1192,
+        "WScore": 86,
+        "LTeamID": 1447,
+        "LScore": 74,
+        "WLoc": "H",
+        "NumOT": 0
+      }
+    ]
+  },
+  "MRegularSeasonDetailedResults.csv": {
+    "file": "MRegularSeasonDetailedResults.csv",
+    "shape": {
+      "rows": 122775,
+      "columns": 34
+    },
+    "columns": [
+      "Season",
+      "DayNum",
+      "WTeamID",
+      "WScore",
+      "LTeamID",
+      "LScore",
+      "WLoc",
+      "NumOT",
+      "WFGM",
+      "WFGA",
+      "WFGM3",
+      "WFGA3",
+      "WFTM",
+      "WFTA",
+      "WOR",
+      "WDR",
+      "WAst",
+      "WTO",
+      "WStl",
+      "WBlk",
+      "WPF",
+      "LFGM",
+      "LFGA",
+      "LFGM3",
+      "LFGA3",
+      "LFTM",
+      "LFTA",
+      "LOR",
+      "LDR",
+      "LAst",
+      "LTO",
+      "LStl",
+      "LBlk",
+      "LPF"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 37.702,
+    "season_range": {
+      "min": 2003,
+      "max": 2026
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 24,
+        "numeric_stats": {
+          "min": 2003.0,
+          "max": 2026.0,
+          "mean": 2014.6224638566484,
+          "std": 6.784957357830344
+        }
+      },
+      "DayNum": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 133,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 132.0,
+          "mean": 70.01267358990022,
+          "std": 35.928210181347005
+        }
+      },
+      "WTeamID": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 372,
+        "numeric_stats": {
+          "min": 1101.0,
+          "max": 1481.0,
+          "mean": 1288.4546528201995,
+          "std": 105.48033887255936
+        }
+      },
+      "WScore": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 104,
+        "numeric_stats": {
+          "min": 34.0,
+          "max": 149.0,
+          "mean": 76.08085522296885,
+          "std": 11.051732811410112
+        }
+      },
+      "LTeamID": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 372,
+        "numeric_stats": {
+          "min": 1101.0,
+          "max": 1481.0,
+          "mean": 1283.4340785990632,
+          "std": 104.98658720699
+        }
+      },
+      "LScore": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 105,
+        "numeric_stats": {
+          "min": 20.0,
+          "max": 144.0,
+          "mean": 64.06082671553655,
+          "std": 10.876749416259978
+        }
+      },
+      "WLoc": {
+        "dtype": "object",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 3,
+        "top_values": {
+          "H": 72217,
+          "A": 37934,
+          "N": 12624
+        }
+      },
+      "NumOT": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 7,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 6.0,
+          "mean": 0.06858888210140501,
+          "std": 0.3046307347172698
+        }
+      },
+      "WFGM": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 45,
+        "numeric_stats": {
+          "min": 10.0,
+          "max": 57.0,
+          "mean": 26.467456729790268,
+          "std": 4.691849674106499
+        }
+      },
+      "WFGA": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 73,
+        "numeric_stats": {
+          "min": 26.0,
+          "max": 103.0,
+          "mean": 55.85800855222969,
+          "std": 7.447785600093272
+        }
+      },
+      "WFGM3": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 27,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 26.0,
+          "mean": 7.396668702911831,
+          "std": 3.1394634019021996
+        }
+      },
+      "WFGA3": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 57,
+        "numeric_stats": {
+          "min": 1.0,
+          "max": 57.0,
+          "mean": 19.473703929953167,
+          "std": 6.082654638497681
+        }
+      },
+      "WFTM": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 50,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 50.0,
+          "mean": 15.749273060476481,
+          "std": 6.2296103120431345
+        }
+      },
+      "WFTA": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 66,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 67.0,
+          "mean": 22.002101405009164,
+          "std": 8.084105242356026
+        }
+      },
+      "WOR": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 37,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 38.0,
+          "mean": 10.319706780696396,
+          "std": 4.120124431352187
+        }
+      },
+      "WDR": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 47,
+        "numeric_stats": {
+          "min": 5.0,
+          "max": 54.0,
+          "mean": 25.59514559152922,
+          "std": 4.8695146398697045
+        }
+      },
+      "WAst": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 39,
+        "numeric_stats": {
+          "min": 1.0,
+          "max": 41.0,
+          "mean": 14.733137853797597,
+          "std": 4.428914218628545
+        }
+      },
+      "WTO": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 34,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 33.0,
+          "mean": 12.494530645489718,
+          "std": 4.0197174741809105
+        }
+      },
+      "WStl": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 27,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 26.0,
+          "mean": 6.98379963347587,
+          "std": 3.094370388461753
+        }
+      },
+      "WBlk": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 21,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 21.0,
+          "mean": 3.778863775198534,
+          "std": 2.411119231355325
+        }
+      },
+      "WPF": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 39,
+        "numeric_stats": {
+          "min": 3.0,
+          "max": 41.0,
+          "mean": 17.146862146202402,
+          "std": 4.12690953194558
+        }
+      },
+      "LFGM": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 42,
+        "numeric_stats": {
+          "min": 6.0,
+          "max": 53.0,
+          "mean": 22.849073508450417,
+          "std": 4.355224968393775
+        }
+      },
+      "LFGA": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 75,
+        "numeric_stats": {
+          "min": 26.0,
+          "max": 106.0,
+          "mean": 56.8556546528202,
+          "std": 7.523618423415234
+        }
+      },
+      "LFGM3": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 23,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 22.0,
+          "mean": 6.245066177967828,
+          "std": 2.8151586267401
+        }
+      },
+      "LFGA3": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 58,
+        "numeric_stats": {
+          "min": 1.0,
+          "max": 59.0,
+          "mean": 20.285001018122582,
+          "std": 6.108232951795554
+        }
+      },
+      "LFTM": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 44,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 48.0,
+          "mean": 12.117613520667888,
+          "std": 5.359095573019146
+        }
+      },
+      "LFTA": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 61,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 65.0,
+          "mean": 17.76636122989208,
+          "std": 7.084354442407792
+        }
+      },
+      "LOR": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 36,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 36.0,
+          "mean": 10.391236000814498,
+          "std": 4.209702740308202
+        }
+      },
+      "LDR": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 44,
+        "numeric_stats": {
+          "min": 4.0,
+          "max": 49.0,
+          "mean": 21.578407656281815,
+          "std": 4.516139391194879
+        }
+      },
+      "LAst": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 32,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 31.0,
+          "mean": 11.429664019547953,
+          "std": 3.730344979239856
+        }
+      },
+      "LTO": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 42,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 41.0,
+          "mean": 13.80137650173081,
+          "std": 4.383175827730975
+        }
+      },
+      "LStl": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 23,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 22.0,
+          "mean": 6.008747709224191,
+          "std": 2.7438149968555057
+        }
+      },
+      "LBlk": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 19,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 18.0,
+          "mean": 2.87326410099776,
+          "std": 2.0169674432242033
+        }
+      },
+      "LPF": {
+        "dtype": "int64",
+        "non_null": 122775,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 42,
+        "numeric_stats": {
+          "min": 4.0,
+          "max": 45.0,
+          "mean": 19.267049480757482,
+          "std": 4.55129632214254
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 2003,
+        "DayNum": 10,
+        "WTeamID": 1104,
+        "WScore": 68,
+        "LTeamID": 1328,
+        "LScore": 62,
+        "WLoc": "N",
+        "NumOT": 0,
+        "WFGM": 27,
+        "WFGA": 58,
+        "WFGM3": 3,
+        "WFGA3": 14,
+        "WFTM": 11,
+        "WFTA": 18,
+        "WOR": 14,
+        "WDR": 24,
+        "WAst": 13,
+        "WTO": 23,
+        "WStl": 7,
+        "WBlk": 1,
+        "WPF": 22,
+        "LFGM": 22,
+        "LFGA": 53,
+        "LFGM3": 2,
+        "LFGA3": 10,
+        "LFTM": 16,
+        "LFTA": 22,
+        "LOR": 10,
+        "LDR": 22,
+        "LAst": 8,
+        "LTO": 18,
+        "LStl": 9,
+        "LBlk": 2,
+        "LPF": 20
+      },
+      {
+        "Season": 2003,
+        "DayNum": 10,
+        "WTeamID": 1272,
+        "WScore": 70,
+        "LTeamID": 1393,
+        "LScore": 63,
+        "WLoc": "N",
+        "NumOT": 0,
+        "WFGM": 26,
+        "WFGA": 62,
+        "WFGM3": 8,
+        "WFGA3": 20,
+        "WFTM": 10,
+        "WFTA": 19,
+        "WOR": 15,
+        "WDR": 28,
+        "WAst": 16,
+        "WTO": 13,
+        "WStl": 4,
+        "WBlk": 4,
+        "WPF": 18,
+        "LFGM": 24,
+        "LFGA": 67,
+        "LFGM3": 6,
+        "LFGA3": 24,
+        "LFTM": 9,
+        "LFTA": 20,
+        "LOR": 20,
+        "LDR": 25,
+        "LAst": 7,
+        "LTO": 12,
+        "LStl": 8,
+        "LBlk": 6,
+        "LPF": 16
+      },
+      {
+        "Season": 2003,
+        "DayNum": 11,
+        "WTeamID": 1266,
+        "WScore": 73,
+        "LTeamID": 1437,
+        "LScore": 61,
+        "WLoc": "N",
+        "NumOT": 0,
+        "WFGM": 24,
+        "WFGA": 58,
+        "WFGM3": 8,
+        "WFGA3": 18,
+        "WFTM": 17,
+        "WFTA": 29,
+        "WOR": 17,
+        "WDR": 26,
+        "WAst": 15,
+        "WTO": 10,
+        "WStl": 5,
+        "WBlk": 2,
+        "WPF": 25,
+        "LFGM": 22,
+        "LFGA": 73,
+        "LFGM3": 3,
+        "LFGA3": 26,
+        "LFTM": 14,
+        "LFTA": 23,
+        "LOR": 31,
+        "LDR": 22,
+        "LAst": 9,
+        "LTO": 12,
+        "LStl": 2,
+        "LBlk": 5,
+        "LPF": 23
+      },
+      {
+        "Season": 2003,
+        "DayNum": 11,
+        "WTeamID": 1296,
+        "WScore": 56,
+        "LTeamID": 1457,
+        "LScore": 50,
+        "WLoc": "N",
+        "NumOT": 0,
+        "WFGM": 18,
+        "WFGA": 38,
+        "WFGM3": 3,
+        "WFGA3": 9,
+        "WFTM": 17,
+        "WFTA": 31,
+        "WOR": 6,
+        "WDR": 19,
+        "WAst": 11,
+        "WTO": 12,
+        "WStl": 14,
+        "WBlk": 2,
+        "WPF": 18,
+        "LFGM": 18,
+        "LFGA": 49,
+        "LFGM3": 6,
+        "LFGA3": 22,
+        "LFTM": 8,
+        "LFTA": 15,
+        "LOR": 17,
+        "LDR": 20,
+        "LAst": 9,
+        "LTO": 19,
+        "LStl": 4,
+        "LBlk": 3,
+        "LPF": 23
+      },
+      {
+        "Season": 2003,
+        "DayNum": 11,
+        "WTeamID": 1400,
+        "WScore": 77,
+        "LTeamID": 1208,
+        "LScore": 71,
+        "WLoc": "N",
+        "NumOT": 0,
+        "WFGM": 30,
+        "WFGA": 61,
+        "WFGM3": 6,
+        "WFGA3": 14,
+        "WFTM": 11,
+        "WFTA": 13,
+        "WOR": 17,
+        "WDR": 22,
+        "WAst": 12,
+        "WTO": 14,
+        "WStl": 4,
+        "WBlk": 4,
+        "WPF": 20,
+        "LFGM": 24,
+        "LFGA": 62,
+        "LFGM3": 6,
+        "LFGA3": 16,
+        "LFTM": 17,
+        "LFTA": 27,
+        "LOR": 21,
+        "LDR": 15,
+        "LAst": 12,
+        "LTO": 10,
+        "LStl": 7,
+        "LBlk": 1,
+        "LPF": 14
+      }
+    ]
+  },
+  "MSeasons.csv": {
+    "file": "MSeasons.csv",
+    "shape": {
+      "rows": 42,
+      "columns": 6
+    },
+    "columns": [
+      "Season",
+      "DayZero",
+      "RegionW",
+      "RegionX",
+      "RegionY",
+      "RegionZ"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 0.013,
+    "season_range": {
+      "min": 1985,
+      "max": 2026
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 42,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 42,
+        "numeric_stats": {
+          "min": 1985.0,
+          "max": 2026.0,
+          "mean": 2005.5,
+          "std": 12.267844146385297
+        }
+      },
+      "DayZero": {
+        "dtype": "object",
+        "non_null": 42,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 42,
+        "top_values": {
+          "10/29/1984": 1,
+          "11/01/1993": 1,
+          "11/03/2003": 1,
+          "10/27/1986": 1,
+          "11/02/1987": 1
+        }
+      },
+      "RegionW": {
+        "dtype": "object",
+        "non_null": 42,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 5,
+        "top_values": {
+          "East": 37,
+          "Atlanta": 2,
+          "Albuquerque": 1,
+          "NA1": 1,
+          "TBD1": 1
+        }
+      },
+      "RegionX": {
+        "dtype": "object",
+        "non_null": 42,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 9,
+        "top_values": {
+          "West": 12,
+          "Midwest": 12,
+          "South": 9,
+          "Southeast": 4,
+          "Phoenix": 1
+        }
+      },
+      "RegionY": {
+        "dtype": "object",
+        "non_null": 42,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 8,
+        "top_values": {
+          "Midwest": 24,
+          "South": 7,
+          "Southeast": 6,
+          "EastRutherford": 1,
+          "Austin": 1
+        }
+      },
+      "RegionZ": {
+        "dtype": "object",
+        "non_null": 42,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 9,
+        "top_values": {
+          "West": 25,
+          "South": 7,
+          "Southeast": 4,
+          "StLouis": 1,
+          "Syracuse": 1
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 1985,
+        "DayZero": "10/29/1984",
+        "RegionW": "East",
+        "RegionX": "West",
+        "RegionY": "Midwest",
+        "RegionZ": "Southeast"
+      },
+      {
+        "Season": 1986,
+        "DayZero": "10/28/1985",
+        "RegionW": "East",
+        "RegionX": "Midwest",
+        "RegionY": "Southeast",
+        "RegionZ": "West"
+      },
+      {
+        "Season": 1987,
+        "DayZero": "10/27/1986",
+        "RegionW": "East",
+        "RegionX": "Southeast",
+        "RegionY": "Midwest",
+        "RegionZ": "West"
+      },
+      {
+        "Season": 1988,
+        "DayZero": "11/02/1987",
+        "RegionW": "East",
+        "RegionX": "Midwest",
+        "RegionY": "Southeast",
+        "RegionZ": "West"
+      },
+      {
+        "Season": 1989,
+        "DayZero": "10/31/1988",
+        "RegionW": "East",
+        "RegionX": "West",
+        "RegionY": "Midwest",
+        "RegionZ": "Southeast"
+      }
+    ]
+  },
+  "MSecondaryTourneyCompactResults.csv": {
+    "file": "MSecondaryTourneyCompactResults.csv",
+    "shape": {
+      "rows": 1865,
+      "columns": 9
+    },
+    "columns": [
+      "Season",
+      "DayNum",
+      "WTeamID",
+      "WScore",
+      "LTeamID",
+      "LScore",
+      "WLoc",
+      "NumOT",
+      "SecondaryTourney"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 0.31,
+    "season_range": {
+      "min": 1985,
+      "max": 2025
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 1865,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 40,
+        "numeric_stats": {
+          "min": 1985.0,
+          "max": 2025.0,
+          "mean": 2007.7801608579089,
+          "std": 11.173760887791738
+        }
+      },
+      "DayNum": {
+        "dtype": "int64",
+        "non_null": 1865,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 21,
+        "numeric_stats": {
+          "min": 133.0,
+          "max": 153.0,
+          "mean": 138.74745308310992,
+          "std": 4.645597066487248
+        }
+      },
+      "WTeamID": {
+        "dtype": "int64",
+        "non_null": 1865,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 283,
+        "numeric_stats": {
+          "min": 1101.0,
+          "max": 1474.0,
+          "mean": 1298.6959785522788,
+          "std": 102.62867099088702
+        }
+      },
+      "WScore": {
+        "dtype": "int64",
+        "non_null": 1865,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 68,
+        "numeric_stats": {
+          "min": 42.0,
+          "max": 120.0,
+          "mean": 76.71742627345844,
+          "std": 10.643463096055681
+        }
+      },
+      "LTeamID": {
+        "dtype": "int64",
+        "non_null": 1865,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 341,
+        "numeric_stats": {
+          "min": 1101.0,
+          "max": 1475.0,
+          "mean": 1288.8482573726542,
+          "std": 105.73922812871102
+        }
+      },
+      "LScore": {
+        "dtype": "int64",
+        "non_null": 1865,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 68,
+        "numeric_stats": {
+          "min": 34.0,
+          "max": 112.0,
+          "mean": 67.10241286863271,
+          "std": 10.596567970745646
+        }
+      },
+      "WLoc": {
+        "dtype": "object",
+        "non_null": 1865,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 3,
+        "top_values": {
+          "H": 1137,
+          "A": 491,
+          "N": 237
+        }
+      },
+      "NumOT": {
+        "dtype": "int64",
+        "non_null": 1865,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 4,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 3.0,
+          "mean": 0.064343163538874,
+          "std": 0.2839395794015257
+        }
+      },
+      "SecondaryTourney": {
+        "dtype": "object",
+        "non_null": 1865,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 7,
+        "top_values": {
+          "NIT": 1281,
+          "CIT": 279,
+          "CBI": 263,
+          "TBC": 17,
+          "CBC": 15
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 1985,
+        "DayNum": 136,
+        "WTeamID": 1151,
+        "WScore": 67,
+        "LTeamID": 1155,
+        "LScore": 65,
+        "WLoc": "H",
+        "NumOT": 0,
+        "SecondaryTourney": "NIT"
+      },
+      {
+        "Season": 1985,
+        "DayNum": 136,
+        "WTeamID": 1153,
+        "WScore": 77,
+        "LTeamID": 1245,
+        "LScore": 61,
+        "WLoc": "H",
+        "NumOT": 0,
+        "SecondaryTourney": "NIT"
+      },
+      {
+        "Season": 1985,
+        "DayNum": 136,
+        "WTeamID": 1201,
+        "WScore": 79,
+        "LTeamID": 1365,
+        "LScore": 76,
+        "WLoc": "H",
+        "NumOT": 0,
+        "SecondaryTourney": "NIT"
+      },
+      {
+        "Season": 1985,
+        "DayNum": 136,
+        "WTeamID": 1231,
+        "WScore": 79,
+        "LTeamID": 1139,
+        "LScore": 57,
+        "WLoc": "H",
+        "NumOT": 0,
+        "SecondaryTourney": "NIT"
+      },
+      {
+        "Season": 1985,
+        "DayNum": 136,
+        "WTeamID": 1249,
+        "WScore": 78,
+        "LTeamID": 1222,
+        "LScore": 71,
+        "WLoc": "H",
+        "NumOT": 0,
+        "SecondaryTourney": "NIT"
+      }
+    ]
+  },
+  "MSecondaryTourneyTeams.csv": {
+    "file": "MSecondaryTourneyTeams.csv",
+    "shape": {
+      "rows": 1895,
+      "columns": 3
+    },
+    "columns": [
+      "Season",
+      "SecondaryTourney",
+      "TeamID"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 0.137,
+    "season_range": {
+      "min": 1985,
+      "max": 2025
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 1895,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 40,
+        "numeric_stats": {
+          "min": 1985.0,
+          "max": 2025.0,
+          "mean": 2007.9192612137203,
+          "std": 11.169677400162714
+        }
+      },
+      "SecondaryTourney": {
+        "dtype": "object",
+        "non_null": 1895,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 6,
+        "top_values": {
+          "NIT": 1304,
+          "CIT": 291,
+          "CBI": 258,
+          "TBC": 18,
+          "CBC": 16
+        }
+      },
+      "TeamID": {
+        "dtype": "int64",
+        "non_null": 1895,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 341,
+        "numeric_stats": {
+          "min": 1101.0,
+          "max": 1475.0,
+          "mean": 1290.5693931398416,
+          "std": 105.39855125450308
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 1985,
+        "SecondaryTourney": "NIT",
+        "TeamID": 1108
+      },
+      {
+        "Season": 1985,
+        "SecondaryTourney": "NIT",
+        "TeamID": 1133
+      },
+      {
+        "Season": 1985,
+        "SecondaryTourney": "NIT",
+        "TeamID": 1139
+      },
+      {
+        "Season": 1985,
+        "SecondaryTourney": "NIT",
+        "TeamID": 1145
+      },
+      {
+        "Season": 1985,
+        "SecondaryTourney": "NIT",
+        "TeamID": 1151
+      }
+    ]
+  },
+  "MTeamCoaches.csv": {
+    "file": "MTeamCoaches.csv",
+    "shape": {
+      "rows": 13898,
+      "columns": 5
+    },
+    "columns": [
+      "Season",
+      "TeamID",
+      "FirstDayNum",
+      "LastDayNum",
+      "CoachName"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 1.337,
+    "season_range": {
+      "min": 1985,
+      "max": 2026
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 13898,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 42,
+        "numeric_stats": {
+          "min": 1985.0,
+          "max": 2026.0,
+          "mean": 2006.4535904446684,
+          "std": 12.03992592201402
+        }
+      },
+      "TeamID": {
+        "dtype": "int64",
+        "non_null": 13898,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 381,
+        "numeric_stats": {
+          "min": 1101.0,
+          "max": 1481.0,
+          "mean": 1285.473809181177,
+          "std": 105.37945940552018
+        }
+      },
+      "FirstDayNum": {
+        "dtype": "int64",
+        "non_null": 13898,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 73,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 135.0,
+          "mean": 0.6931213124190531,
+          "std": 7.503213014474169
+        }
+      },
+      "LastDayNum": {
+        "dtype": "int64",
+        "non_null": 13898,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 73,
+        "numeric_stats": {
+          "min": 11.0,
+          "max": 154.0,
+          "mean": 151.5854799251691,
+          "std": 12.929917619677866
+        }
+      },
+      "CoachName": {
+        "dtype": "object",
+        "non_null": 13898,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 1657,
+        "top_values": {
+          "rick_barnes": 39,
+          "jim_boeheim": 39,
+          "jim_larranaga": 39,
+          "mike_krzyzewski": 38,
+          "bob_huggins": 38
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 1985,
+        "TeamID": 1102,
+        "FirstDayNum": 0,
+        "LastDayNum": 154,
+        "CoachName": "reggie_minton"
+      },
+      {
+        "Season": 1985,
+        "TeamID": 1103,
+        "FirstDayNum": 0,
+        "LastDayNum": 154,
+        "CoachName": "bob_huggins"
+      },
+      {
+        "Season": 1985,
+        "TeamID": 1104,
+        "FirstDayNum": 0,
+        "LastDayNum": 154,
+        "CoachName": "wimp_sanderson"
+      },
+      {
+        "Season": 1985,
+        "TeamID": 1106,
+        "FirstDayNum": 0,
+        "LastDayNum": 154,
+        "CoachName": "james_oliver"
+      },
+      {
+        "Season": 1985,
+        "TeamID": 1108,
+        "FirstDayNum": 0,
+        "LastDayNum": 154,
+        "CoachName": "davey_whitney"
+      }
+    ]
+  },
+  "MTeamConferences.csv": {
+    "file": "MTeamConferences.csv",
+    "shape": {
+      "rows": 13753,
+      "columns": 3
+    },
+    "columns": [
+      "Season",
+      "TeamID",
+      "ConfAbbrev"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 1.026,
+    "season_range": {
+      "min": 1985,
+      "max": 2026
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 13753,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 42,
+        "numeric_stats": {
+          "min": 1985.0,
+          "max": 2026.0,
+          "mean": 2006.440776557842,
+          "std": 12.037529822888759
+        }
+      },
+      "TeamID": {
+        "dtype": "int64",
+        "non_null": 13753,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 381,
+        "numeric_stats": {
+          "min": 1101.0,
+          "max": 1481.0,
+          "mean": 1285.4554642623427,
+          "std": 105.34563840988015
+        }
+      },
+      "ConfAbbrev": {
+        "dtype": "object",
+        "non_null": 13753,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 51,
+        "top_values": {
+          "sec": 522,
+          "a_ten": 522,
+          "big_ten": 501,
+          "big_east": 499,
+          "acc": 481
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 1985,
+        "TeamID": 1102,
+        "ConfAbbrev": "wac"
+      },
+      {
+        "Season": 1985,
+        "TeamID": 1103,
+        "ConfAbbrev": "ovc"
+      },
+      {
+        "Season": 1985,
+        "TeamID": 1104,
+        "ConfAbbrev": "sec"
+      },
+      {
+        "Season": 1985,
+        "TeamID": 1106,
+        "ConfAbbrev": "swac"
+      },
+      {
+        "Season": 1985,
+        "TeamID": 1108,
+        "ConfAbbrev": "swac"
+      }
+    ]
+  },
+  "MTeams.csv": {
+    "file": "MTeams.csv",
+    "shape": {
+      "rows": 381,
+      "columns": 4
+    },
+    "columns": [
+      "TeamID",
+      "TeamName",
+      "FirstD1Season",
+      "LastD1Season"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 0.033,
+    "season_range": {
+      "min": null,
+      "max": null
+    },
+    "column_profiles": {
+      "TeamID": {
+        "dtype": "int64",
+        "non_null": 381,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 381,
+        "numeric_stats": {
+          "min": 1101.0,
+          "max": 1481.0,
+          "mean": 1291.0,
+          "std": 110.12946926231871
+        }
+      },
+      "TeamName": {
+        "dtype": "object",
+        "non_null": 381,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 381,
+        "top_values": {
+          "Abilene Chr": 1,
+          "Baylor": 1,
+          "Akron": 1,
+          "Alabama": 1,
+          "Alabama A&M": 1
+        }
+      },
+      "FirstD1Season": {
+        "dtype": "int64",
+        "non_null": 381,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 33,
+        "numeric_stats": {
+          "min": 1985.0,
+          "max": 2026.0,
+          "mean": 1989.713910761155,
+          "std": 9.919653043721073
+        }
+      },
+      "LastD1Season": {
+        "dtype": "int64",
+        "non_null": 381,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 14,
+        "numeric_stats": {
+          "min": 1985.0,
+          "max": 2026.0,
+          "mean": 2024.9133858267717,
+          "std": 5.8571013426086385
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "TeamID": 1101,
+        "TeamName": "Abilene Chr",
+        "FirstD1Season": 2014,
+        "LastD1Season": 2026
+      },
+      {
+        "TeamID": 1102,
+        "TeamName": "Air Force",
+        "FirstD1Season": 1985,
+        "LastD1Season": 2026
+      },
+      {
+        "TeamID": 1103,
+        "TeamName": "Akron",
+        "FirstD1Season": 1985,
+        "LastD1Season": 2026
+      },
+      {
+        "TeamID": 1104,
+        "TeamName": "Alabama",
+        "FirstD1Season": 1985,
+        "LastD1Season": 2026
+      },
+      {
+        "TeamID": 1105,
+        "TeamName": "Alabama A&M",
+        "FirstD1Season": 2000,
+        "LastD1Season": 2026
+      }
+    ]
+  },
+  "MTeamSpellings.csv": {
+    "file": "MTeamSpellings.csv",
+    "shape": {
+      "rows": 1178,
+      "columns": 2
+    },
+    "columns": [
+      "TeamNameSpelling",
+      "TeamID"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 0.087,
+    "season_range": {
+      "min": null,
+      "max": null
+    },
+    "column_profiles": {
+      "TeamNameSpelling": {
+        "dtype": "object",
+        "non_null": 1178,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 1178,
+        "top_values": {
+          "a&m-corpus chris": 1,
+          "appalachian-state": 1,
+          "abilene-christian": 1,
+          "air force": 1,
+          "air-force": 1
+        }
+      },
+      "TeamID": {
+        "dtype": "int64",
+        "non_null": 1178,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 381,
+        "numeric_stats": {
+          "min": 1101.0,
+          "max": 1481.0,
+          "mean": 1293.1689303904923,
+          "std": 106.61126625494536
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "TeamNameSpelling": "a&m-corpus chris",
+        "TeamID": 1394
+      },
+      {
+        "TeamNameSpelling": "a&m-corpus christi",
+        "TeamID": 1394
+      },
+      {
+        "TeamNameSpelling": "abilene chr",
+        "TeamID": 1101
+      },
+      {
+        "TeamNameSpelling": "abilene christian",
+        "TeamID": 1101
+      },
+      {
+        "TeamNameSpelling": "abilene-christian",
+        "TeamID": 1101
+      }
+    ]
+  },
+  "SampleSubmissionStage1.csv": {
+    "file": "SampleSubmissionStage1.csv",
+    "shape": {
+      "rows": 519144,
+      "columns": 2
+    },
+    "columns": [
+      "ID",
+      "Pred"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 39.113,
+    "season_range": {
+      "min": null,
+      "max": null
+    },
+    "column_profiles": {
+      "ID": {
+        "dtype": "object",
+        "non_null": 519144,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 519144,
+        "top_values": {
+          "2022_1101_1102": 1,
+          "2022_1101_1124": 1,
+          "2022_1101_1108": 1,
+          "2022_1101_1110": 1,
+          "2022_1101_1111": 1
+        }
+      },
+      "Pred": {
+        "dtype": "float64",
+        "non_null": 519144,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 1,
+        "numeric_stats": {
+          "min": 0.5,
+          "max": 0.5,
+          "mean": 0.5,
+          "std": 0.0
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "ID": "2022_1101_1102",
+        "Pred": 0.5
+      },
+      {
+        "ID": "2022_1101_1103",
+        "Pred": 0.5
+      },
+      {
+        "ID": "2022_1101_1104",
+        "Pred": 0.5
+      },
+      {
+        "ID": "2022_1101_1105",
+        "Pred": 0.5
+      },
+      {
+        "ID": "2022_1101_1106",
+        "Pred": 0.5
+      }
+    ]
+  },
+  "SampleSubmissionStage2.csv": {
+    "file": "SampleSubmissionStage2.csv",
+    "shape": {
+      "rows": 132133,
+      "columns": 2
+    },
+    "columns": [
+      "ID",
+      "Pred"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 9.955,
+    "season_range": {
+      "min": null,
+      "max": null
+    },
+    "column_profiles": {
+      "ID": {
+        "dtype": "object",
+        "non_null": 132133,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 132133,
+        "top_values": {
+          "2026_1101_1102": 1,
+          "2026_1101_1173": 1,
+          "2026_1101_1105": 1,
+          "2026_1101_1106": 1,
+          "2026_1101_1107": 1
+        }
+      },
+      "Pred": {
+        "dtype": "float64",
+        "non_null": 132133,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 1,
+        "numeric_stats": {
+          "min": 0.5,
+          "max": 0.5,
+          "mean": 0.5,
+          "std": 0.0
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "ID": "2026_1101_1102",
+        "Pred": 0.5
+      },
+      {
+        "ID": "2026_1101_1103",
+        "Pred": 0.5
+      },
+      {
+        "ID": "2026_1101_1104",
+        "Pred": 0.5
+      },
+      {
+        "ID": "2026_1101_1105",
+        "Pred": 0.5
+      },
+      {
+        "ID": "2026_1101_1106",
+        "Pred": 0.5
+      }
+    ]
+  },
+  "WConferenceTourneyGames.csv": {
+    "file": "WConferenceTourneyGames.csv",
+    "shape": {
+      "rows": 6481,
+      "columns": 5
+    },
+    "columns": [
+      "Season",
+      "ConfAbbrev",
+      "DayNum",
+      "WTeamID",
+      "LTeamID"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 0.583,
+    "season_range": {
+      "min": 2002,
+      "max": 2025
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 6481,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 24,
+        "numeric_stats": {
+          "min": 2002.0,
+          "max": 2025.0,
+          "mean": 2013.7742632309828,
+          "std": 6.854087127838962
+        }
+      },
+      "ConfAbbrev": {
+        "dtype": "object",
+        "non_null": 6481,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 34,
+        "top_values": {
+          "sec": 288,
+          "acc": 285,
+          "a_ten": 279,
+          "big_ten": 274,
+          "big_east": 264
+        }
+      },
+      "DayNum": {
+        "dtype": "int64",
+        "non_null": 6481,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 17,
+        "numeric_stats": {
+          "min": 115.0,
+          "max": 132.0,
+          "mean": 125.92377719487733,
+          "std": 3.1640912025421666
+        }
+      },
+      "WTeamID": {
+        "dtype": "int64",
+        "non_null": 6481,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 358,
+        "numeric_stats": {
+          "min": 3101.0,
+          "max": 3478.0,
+          "mean": 3284.736306125598,
+          "std": 103.53023082921577
+        }
+      },
+      "LTeamID": {
+        "dtype": "int64",
+        "non_null": 6481,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 363,
+        "numeric_stats": {
+          "min": 3101.0,
+          "max": 3480.0,
+          "mean": 3285.132695571671,
+          "std": 105.19093595197212
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 2002,
+        "ConfAbbrev": "ovc",
+        "DayNum": 120,
+        "WTeamID": 3122,
+        "LTeamID": 3369
+      },
+      {
+        "Season": 2002,
+        "ConfAbbrev": "ovc",
+        "DayNum": 120,
+        "WTeamID": 3184,
+        "LTeamID": 3293
+      },
+      {
+        "Season": 2002,
+        "ConfAbbrev": "ovc",
+        "DayNum": 120,
+        "WTeamID": 3287,
+        "LTeamID": 3404
+      },
+      {
+        "Season": 2002,
+        "ConfAbbrev": "ovc",
+        "DayNum": 120,
+        "WTeamID": 3399,
+        "LTeamID": 3183
+      },
+      {
+        "Season": 2002,
+        "ConfAbbrev": "horizon",
+        "DayNum": 121,
+        "WTeamID": 3139,
+        "LTeamID": 3460
+      }
+    ]
+  },
+  "WGameCities.csv": {
+    "file": "WGameCities.csv",
+    "shape": {
+      "rows": 87353,
+      "columns": 6
+    },
+    "columns": [
+      "Season",
+      "DayNum",
+      "WTeamID",
+      "LTeamID",
+      "CRType",
+      "CityID"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 8.663,
+    "season_range": {
+      "min": 2010,
+      "max": 2026
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 87353,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 17,
+        "numeric_stats": {
+          "min": 2010.0,
+          "max": 2026.0,
+          "mean": 2017.8887960344807,
+          "std": 4.847228506576069
+        }
+      },
+      "DayNum": {
+        "dtype": "int64",
+        "non_null": 87353,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 153,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 155.0,
+          "mean": 70.34075532609069,
+          "std": 37.363382591753876
+        }
+      },
+      "WTeamID": {
+        "dtype": "int64",
+        "non_null": 87353,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 367,
+        "numeric_stats": {
+          "min": 3101.0,
+          "max": 3481.0,
+          "mean": 3285.606779389374,
+          "std": 104.22194218239119
+        }
+      },
+      "LTeamID": {
+        "dtype": "int64",
+        "non_null": 87353,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 367,
+        "numeric_stats": {
+          "min": 3101.0,
+          "max": 3481.0,
+          "mean": 3286.9741623069613,
+          "std": 105.7231445081487
+        }
+      },
+      "CRType": {
+        "dtype": "object",
+        "non_null": 87353,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 3,
+        "top_values": {
+          "Regular": 85486,
+          "NCAA": 961,
+          "Secondary": 906
+        }
+      },
+      "CityID": {
+        "dtype": "int64",
+        "non_null": 87353,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 454,
+        "numeric_stats": {
+          "min": 4001.0,
+          "max": 4531.0,
+          "mean": 4190.260975581835,
+          "std": 114.49351066373416
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 2010,
+        "DayNum": 11,
+        "WTeamID": 3103,
+        "LTeamID": 3237,
+        "CRType": "Regular",
+        "CityID": 4002
+      },
+      {
+        "Season": 2010,
+        "DayNum": 11,
+        "WTeamID": 3104,
+        "LTeamID": 3399,
+        "CRType": "Regular",
+        "CityID": 4085
+      },
+      {
+        "Season": 2010,
+        "DayNum": 11,
+        "WTeamID": 3110,
+        "LTeamID": 3224,
+        "CRType": "Regular",
+        "CityID": 4363
+      },
+      {
+        "Season": 2010,
+        "DayNum": 11,
+        "WTeamID": 3111,
+        "LTeamID": 3267,
+        "CRType": "Regular",
+        "CityID": 4158
+      },
+      {
+        "Season": 2010,
+        "DayNum": 11,
+        "WTeamID": 3119,
+        "LTeamID": 3447,
+        "CRType": "Regular",
+        "CityID": 4367
+      }
+    ]
+  },
+  "WNCAATourneyCompactResults.csv": {
+    "file": "WNCAATourneyCompactResults.csv",
+    "shape": {
+      "rows": 1717,
+      "columns": 8
+    },
+    "columns": [
+      "Season",
+      "DayNum",
+      "WTeamID",
+      "WScore",
+      "LTeamID",
+      "LScore",
+      "WLoc",
+      "NumOT"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 0.187,
+    "season_range": {
+      "min": 1998,
+      "max": 2025
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 1717,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 27,
+        "numeric_stats": {
+          "min": 1998.0,
+          "max": 2025.0,
+          "mean": 2011.2999417588817,
+          "std": 8.10782989405993
+        }
+      },
+      "DayNum": {
+        "dtype": "int64",
+        "non_null": 1717,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 16,
+        "numeric_stats": {
+          "min": 135.0,
+          "max": 155.0,
+          "mean": 140.648223645894,
+          "std": 4.044012458084423
+        }
+      },
+      "WTeamID": {
+        "dtype": "int64",
+        "non_null": 1717,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 136,
+        "numeric_stats": {
+          "min": 3104.0,
+          "max": 3464.0,
+          "mean": 3286.559114735003,
+          "std": 96.99590639072628
+        }
+      },
+      "WScore": {
+        "dtype": "int64",
+        "non_null": 1717,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 67,
+        "numeric_stats": {
+          "min": 47.0,
+          "max": 140.0,
+          "mean": 75.85148514851485,
+          "std": 11.4478937281797
+        }
+      },
+      "LTeamID": {
+        "dtype": "int64",
+        "non_null": 1717,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 285,
+        "numeric_stats": {
+          "min": 3101.0,
+          "max": 3471.0,
+          "mean": 3287.836342457775,
+          "std": 99.73971081714308
+        }
+      },
+      "LScore": {
+        "dtype": "int64",
+        "non_null": 1717,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 69,
+        "numeric_stats": {
+          "min": 21.0,
+          "max": 108.0,
+          "mean": 59.123471170646475,
+          "std": 11.049207170025543
+        }
+      },
+      "WLoc": {
+        "dtype": "object",
+        "non_null": 1717,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 3,
+        "top_values": {
+          "N": 886,
+          "H": 676,
+          "A": 155
+        }
+      },
+      "NumOT": {
+        "dtype": "int64",
+        "non_null": 1717,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 3,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 2.0,
+          "mean": 0.0256260920209668,
+          "std": 0.17217999599384642
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 1998,
+        "DayNum": 137,
+        "WTeamID": 3104,
+        "WScore": 94,
+        "LTeamID": 3422,
+        "LScore": 46,
+        "WLoc": "H",
+        "NumOT": 0
+      },
+      {
+        "Season": 1998,
+        "DayNum": 137,
+        "WTeamID": 3112,
+        "WScore": 75,
+        "LTeamID": 3365,
+        "LScore": 63,
+        "WLoc": "H",
+        "NumOT": 0
+      },
+      {
+        "Season": 1998,
+        "DayNum": 137,
+        "WTeamID": 3163,
+        "WScore": 93,
+        "LTeamID": 3193,
+        "LScore": 52,
+        "WLoc": "H",
+        "NumOT": 0
+      },
+      {
+        "Season": 1998,
+        "DayNum": 137,
+        "WTeamID": 3198,
+        "WScore": 59,
+        "LTeamID": 3266,
+        "LScore": 45,
+        "WLoc": "H",
+        "NumOT": 0
+      },
+      {
+        "Season": 1998,
+        "DayNum": 137,
+        "WTeamID": 3203,
+        "WScore": 74,
+        "LTeamID": 3208,
+        "LScore": 72,
+        "WLoc": "A",
+        "NumOT": 0
+      }
+    ]
+  },
+  "WNCAATourneyDetailedResults.csv": {
+    "file": "WNCAATourneyDetailedResults.csv",
+    "shape": {
+      "rows": 961,
+      "columns": 34
+    },
+    "columns": [
+      "Season",
+      "DayNum",
+      "WTeamID",
+      "WScore",
+      "LTeamID",
+      "LScore",
+      "WLoc",
+      "NumOT",
+      "WFGM",
+      "WFGA",
+      "WFGM3",
+      "WFGA3",
+      "WFTM",
+      "WFTA",
+      "WOR",
+      "WDR",
+      "WAst",
+      "WTO",
+      "WStl",
+      "WBlk",
+      "WPF",
+      "LFGM",
+      "LFGA",
+      "LFGM3",
+      "LFGA3",
+      "LFTM",
+      "LFTA",
+      "LOR",
+      "LDR",
+      "LAst",
+      "LTO",
+      "LStl",
+      "LBlk",
+      "LPF"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 0.295,
+    "season_range": {
+      "min": 2010,
+      "max": 2025
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 15,
+        "numeric_stats": {
+          "min": 2010.0,
+          "max": 2025.0,
+          "mean": 2017.4360041623308,
+          "std": 4.7454269934308835
+        }
+      },
+      "DayNum": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 16,
+        "numeric_stats": {
+          "min": 135.0,
+          "max": 155.0,
+          "mean": 140.5338189386056,
+          "std": 4.0245536611342905
+        }
+      },
+      "WTeamID": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 107,
+        "numeric_stats": {
+          "min": 3104.0,
+          "max": 3462.0,
+          "mean": 3285.1883454734652,
+          "std": 96.1818206005195
+        }
+      },
+      "WScore": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 66,
+        "numeric_stats": {
+          "min": 47.0,
+          "max": 140.0,
+          "mean": 76.38189386056192,
+          "std": 11.853130957383785
+        }
+      },
+      "LTeamID": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 235,
+        "numeric_stats": {
+          "min": 3101.0,
+          "max": 3471.0,
+          "mean": 3284.9281997918833,
+          "std": 98.68064044022705
+        }
+      },
+      "LScore": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 66,
+        "numeric_stats": {
+          "min": 21.0,
+          "max": 108.0,
+          "mean": 59.346514047866805,
+          "std": 11.520977733666799
+        }
+      },
+      "WLoc": {
+        "dtype": "object",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 3,
+        "top_values": {
+          "N": 582,
+          "H": 322,
+          "A": 57
+        }
+      },
+      "NumOT": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 3,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 2.0,
+          "mean": 0.037460978147762745,
+          "std": 0.21078080238198224
+        }
+      },
+      "WFGM": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 33,
+        "numeric_stats": {
+          "min": 14.0,
+          "max": 59.0,
+          "mean": 27.93964620187305,
+          "std": 5.298830401578866
+        }
+      },
+      "WFGA": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 45,
+        "numeric_stats": {
+          "min": 40.0,
+          "max": 91.0,
+          "mean": 60.25910509885536,
+          "std": 7.650196268614141
+        }
+      },
+      "WFGM3": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 18,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 18.0,
+          "mean": 6.18210197710718,
+          "std": 3.2254089136763966
+        }
+      },
+      "WFGA3": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 38,
+        "numeric_stats": {
+          "min": 1.0,
+          "max": 38.0,
+          "mean": 16.77003121748179,
+          "std": 6.4931195073342485
+        }
+      },
+      "WFTM": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 31,
+        "numeric_stats": {
+          "min": 2.0,
+          "max": 34.0,
+          "mean": 14.320499479708637,
+          "std": 5.725972093621033
+        }
+      },
+      "WFTA": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 42,
+        "numeric_stats": {
+          "min": 2.0,
+          "max": 43.0,
+          "mean": 19.45785639958377,
+          "std": 7.317540512370998
+        }
+      },
+      "WOR": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 27,
+        "numeric_stats": {
+          "min": 1.0,
+          "max": 27.0,
+          "mean": 12.116545265348595,
+          "std": 4.748568526658957
+        }
+      },
+      "WDR": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 36,
+        "numeric_stats": {
+          "min": 3.0,
+          "max": 54.0,
+          "mean": 27.75754422476587,
+          "std": 5.559948647504388
+        }
+      },
+      "WAst": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 31,
+        "numeric_stats": {
+          "min": 4.0,
+          "max": 38.0,
+          "mean": 15.957336108220604,
+          "std": 5.076831646111114
+        }
+      },
+      "WTO": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 27,
+        "numeric_stats": {
+          "min": 3.0,
+          "max": 34.0,
+          "mean": 13.285119667013527,
+          "std": 4.276373708533852
+        }
+      },
+      "WStl": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 24,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 24.0,
+          "mean": 7.858480749219563,
+          "std": 3.5670297783271705
+        }
+      },
+      "WBlk": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 17,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 16.0,
+          "mean": 4.603537981269511,
+          "std": 2.800659887059295
+        }
+      },
+      "WPF": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 27,
+        "numeric_stats": {
+          "min": 3.0,
+          "max": 31.0,
+          "mean": 14.77315296566077,
+          "std": 4.072333911401689
+        }
+      },
+      "LFGM": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 32,
+        "numeric_stats": {
+          "min": 7.0,
+          "max": 40.0,
+          "mean": 22.032258064516128,
+          "std": 4.72912077804462
+        }
+      },
+      "LFGA": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 45,
+        "numeric_stats": {
+          "min": 37.0,
+          "max": 88.0,
+          "mean": 60.73985431841832,
+          "std": 7.796965460704667
+        }
+      },
+      "LFGM3": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 18,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 17.0,
+          "mean": 5.45993756503642,
+          "std": 2.858595881331333
+        }
+      },
+      "LFGA3": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 42,
+        "numeric_stats": {
+          "min": 3.0,
+          "max": 57.0,
+          "mean": 19.407908428720084,
+          "std": 7.081085419971951
+        }
+      },
+      "LFTM": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 27,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 26.0,
+          "mean": 9.822060353798127,
+          "std": 4.93146491087455
+        }
+      },
+      "LFTA": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 35,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 38.0,
+          "mean": 13.822060353798127,
+          "std": 6.395520268165855
+        }
+      },
+      "LOR": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 29,
+        "numeric_stats": {
+          "min": 1.0,
+          "max": 29.0,
+          "mean": 11.263267429760665,
+          "std": 4.828775869318762
+        }
+      },
+      "LDR": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 28,
+        "numeric_stats": {
+          "min": 8.0,
+          "max": 35.0,
+          "mean": 21.388137356919874,
+          "std": 4.755503912777985
+        }
+      },
+      "LAst": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 24,
+        "numeric_stats": {
+          "min": 2.0,
+          "max": 29.0,
+          "mean": 11.373569198751301,
+          "std": 3.87444736081378
+        }
+      },
+      "LTO": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 30,
+        "numeric_stats": {
+          "min": 2.0,
+          "max": 32.0,
+          "mean": 14.632674297606659,
+          "std": 4.765034761487314
+        }
+      },
+      "LStl": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 21,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 22.0,
+          "mean": 6.644120707596254,
+          "std": 3.1141962048145206
+        }
+      },
+      "LBlk": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 14,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 13.0,
+          "mean": 3.0291363163371487,
+          "std": 2.1038615743691143
+        }
+      },
+      "LPF": {
+        "dtype": "int64",
+        "non_null": 961,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 26,
+        "numeric_stats": {
+          "min": 3.0,
+          "max": 31.0,
+          "mean": 17.735691987513007,
+          "std": 4.229960816015854
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 2010,
+        "DayNum": 138,
+        "WTeamID": 3124,
+        "WScore": 69,
+        "LTeamID": 3201,
+        "LScore": 55,
+        "WLoc": "N",
+        "NumOT": 0,
+        "WFGM": 28,
+        "WFGA": 57,
+        "WFGM3": 1,
+        "WFGA3": 5,
+        "WFTM": 12,
+        "WFTA": 19,
+        "WOR": 13,
+        "WDR": 24,
+        "WAst": 22,
+        "WTO": 12,
+        "WStl": 6,
+        "WBlk": 2,
+        "WPF": 12,
+        "LFGM": 21,
+        "LFGA": 61,
+        "LFGM3": 10,
+        "LFGA3": 34,
+        "LFTM": 3,
+        "LFTA": 5,
+        "LOR": 17,
+        "LDR": 19,
+        "LAst": 12,
+        "LTO": 18,
+        "LStl": 4,
+        "LBlk": 1,
+        "LPF": 18
+      },
+      {
+        "Season": 2010,
+        "DayNum": 138,
+        "WTeamID": 3173,
+        "WScore": 67,
+        "LTeamID": 3395,
+        "LScore": 66,
+        "WLoc": "N",
+        "NumOT": 0,
+        "WFGM": 23,
+        "WFGA": 59,
+        "WFGM3": 9,
+        "WFGA3": 26,
+        "WFTM": 12,
+        "WFTA": 19,
+        "WOR": 13,
+        "WDR": 34,
+        "WAst": 13,
+        "WTO": 16,
+        "WStl": 3,
+        "WBlk": 10,
+        "WPF": 14,
+        "LFGM": 22,
+        "LFGA": 73,
+        "LFGM3": 8,
+        "LFGA3": 27,
+        "LFTM": 14,
+        "LFTA": 15,
+        "LOR": 18,
+        "LDR": 26,
+        "LAst": 8,
+        "LTO": 8,
+        "LStl": 8,
+        "LBlk": 6,
+        "LPF": 22
+      },
+      {
+        "Season": 2010,
+        "DayNum": 138,
+        "WTeamID": 3181,
+        "WScore": 72,
+        "LTeamID": 3214,
+        "LScore": 37,
+        "WLoc": "H",
+        "NumOT": 0,
+        "WFGM": 26,
+        "WFGA": 57,
+        "WFGM3": 4,
+        "WFGA3": 13,
+        "WFTM": 16,
+        "WFTA": 22,
+        "WOR": 13,
+        "WDR": 34,
+        "WAst": 15,
+        "WTO": 11,
+        "WStl": 10,
+        "WBlk": 7,
+        "WPF": 11,
+        "LFGM": 15,
+        "LFGA": 56,
+        "LFGM3": 4,
+        "LFGA3": 15,
+        "LFTM": 3,
+        "LFTA": 8,
+        "LOR": 10,
+        "LDR": 21,
+        "LAst": 4,
+        "LTO": 16,
+        "LStl": 6,
+        "LBlk": 4,
+        "LPF": 20
+      },
+      {
+        "Season": 2010,
+        "DayNum": 138,
+        "WTeamID": 3199,
+        "WScore": 75,
+        "LTeamID": 3256,
+        "LScore": 61,
+        "WLoc": "H",
+        "NumOT": 0,
+        "WFGM": 25,
+        "WFGA": 63,
+        "WFGM3": 3,
+        "WFGA3": 15,
+        "WFTM": 22,
+        "WFTA": 26,
+        "WOR": 20,
+        "WDR": 27,
+        "WAst": 13,
+        "WTO": 17,
+        "WStl": 8,
+        "WBlk": 3,
+        "WPF": 21,
+        "LFGM": 21,
+        "LFGA": 62,
+        "LFGM3": 2,
+        "LFGA3": 20,
+        "LFTM": 17,
+        "LFTA": 22,
+        "LOR": 16,
+        "LDR": 21,
+        "LAst": 13,
+        "LTO": 16,
+        "LStl": 5,
+        "LBlk": 4,
+        "LPF": 24
+      },
+      {
+        "Season": 2010,
+        "DayNum": 138,
+        "WTeamID": 3207,
+        "WScore": 62,
+        "LTeamID": 3265,
+        "LScore": 42,
+        "WLoc": "N",
+        "NumOT": 0,
+        "WFGM": 24,
+        "WFGA": 68,
+        "WFGM3": 8,
+        "WFGA3": 25,
+        "WFTM": 6,
+        "WFTA": 8,
+        "WOR": 20,
+        "WDR": 29,
+        "WAst": 16,
+        "WTO": 8,
+        "WStl": 5,
+        "WBlk": 5,
+        "WPF": 18,
+        "LFGM": 13,
+        "LFGA": 60,
+        "LFGM3": 5,
+        "LFGA3": 26,
+        "LFTM": 11,
+        "LFTA": 17,
+        "LOR": 16,
+        "LDR": 22,
+        "LAst": 9,
+        "LTO": 10,
+        "LStl": 3,
+        "LBlk": 4,
+        "LPF": 12
+      }
+    ]
+  },
+  "WNCAATourneySeeds.csv": {
+    "file": "WNCAATourneySeeds.csv",
+    "shape": {
+      "rows": 1744,
+      "columns": 3
+    },
+    "columns": [
+      "Season",
+      "Seed",
+      "TeamID"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 0.127,
+    "season_range": {
+      "min": 1998,
+      "max": 2025
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 1744,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 27,
+        "numeric_stats": {
+          "min": 1998.0,
+          "max": 2025.0,
+          "mean": 2011.2981651376147,
+          "std": 8.107034765905818
+        }
+      },
+      "Seed": {
+        "dtype": "object",
+        "non_null": 1744,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 80,
+        "top_values": {
+          "W01": 27,
+          "Y01": 27,
+          "W09": 27,
+          "X02": 27,
+          "W08": 27
+        }
+      },
+      "TeamID": {
+        "dtype": "int64",
+        "non_null": 1744,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 285,
+        "numeric_stats": {
+          "min": 3101.0,
+          "max": 3471.0,
+          "mean": 3287.276376146789,
+          "std": 99.94650544696296
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 1998,
+        "Seed": "W01",
+        "TeamID": 3330
+      },
+      {
+        "Season": 1998,
+        "Seed": "W02",
+        "TeamID": 3163
+      },
+      {
+        "Season": 1998,
+        "Seed": "W03",
+        "TeamID": 3112
+      },
+      {
+        "Season": 1998,
+        "Seed": "W04",
+        "TeamID": 3301
+      },
+      {
+        "Season": 1998,
+        "Seed": "W05",
+        "TeamID": 3272
+      }
+    ]
+  },
+  "WNCAATourneySlots.csv": {
+    "file": "WNCAATourneySlots.csv",
+    "shape": {
+      "rows": 1780,
+      "columns": 4
+    },
+    "columns": [
+      "Season",
+      "Slot",
+      "StrongSeed",
+      "WeakSeed"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 0.323,
+    "season_range": {
+      "min": 1998,
+      "max": 2025
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 1780,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 28,
+        "numeric_stats": {
+          "min": 1998.0,
+          "max": 2025.0,
+          "mean": 2011.6078651685393,
+          "std": 8.123702469582522
+        }
+      },
+      "Slot": {
+        "dtype": "object",
+        "non_null": 1780,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 71,
+        "top_values": {
+          "R1W1": 28,
+          "R2W4": 28,
+          "R1X8": 28,
+          "R2W1": 28,
+          "R1W4": 28
+        }
+      },
+      "StrongSeed": {
+        "dtype": "object",
+        "non_null": 1780,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 71,
+        "top_values": {
+          "W01": 28,
+          "R1W4": 28,
+          "X08": 28,
+          "R1W1": 28,
+          "W04": 28
+        }
+      },
+      "WeakSeed": {
+        "dtype": "object",
+        "non_null": 1780,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 71,
+        "top_values": {
+          "W16": 28,
+          "R1W5": 28,
+          "X09": 28,
+          "R1W8": 28,
+          "W13": 28
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 1998,
+        "Slot": "R1W1",
+        "StrongSeed": "W01",
+        "WeakSeed": "W16"
+      },
+      {
+        "Season": 1998,
+        "Slot": "R1W2",
+        "StrongSeed": "W02",
+        "WeakSeed": "W15"
+      },
+      {
+        "Season": 1998,
+        "Slot": "R1W3",
+        "StrongSeed": "W03",
+        "WeakSeed": "W14"
+      },
+      {
+        "Season": 1998,
+        "Slot": "R1W4",
+        "StrongSeed": "W04",
+        "WeakSeed": "W13"
+      },
+      {
+        "Season": 1998,
+        "Slot": "R1W5",
+        "StrongSeed": "W05",
+        "WeakSeed": "W12"
+      }
+    ]
+  },
+  "WRegularSeasonCompactResults.csv": {
+    "file": "WRegularSeasonCompactResults.csv",
+    "shape": {
+      "rows": 140825,
+      "columns": 8
+    },
+    "columns": [
+      "Season",
+      "DayNum",
+      "WTeamID",
+      "WScore",
+      "LTeamID",
+      "LScore",
+      "WLoc",
+      "NumOT"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 15.31,
+    "season_range": {
+      "min": 1998,
+      "max": 2026
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 140825,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 29,
+        "numeric_stats": {
+          "min": 1998.0,
+          "max": 2026.0,
+          "mean": 2012.3423397834192,
+          "std": 8.152988720000138
+        }
+      },
+      "DayNum": {
+        "dtype": "int64",
+        "non_null": 140825,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 133,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 132.0,
+          "mean": 70.47635718089828,
+          "std": 35.43241351472802
+        }
+      },
+      "WTeamID": {
+        "dtype": "int64",
+        "non_null": 140825,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 370,
+        "numeric_stats": {
+          "min": 3101.0,
+          "max": 3481.0,
+          "mean": 3285.2416119297,
+          "std": 104.1930830765631
+        }
+      },
+      "WScore": {
+        "dtype": "int64",
+        "non_null": 140825,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 105,
+        "numeric_stats": {
+          "min": 30.0,
+          "max": 140.0,
+          "mean": 71.97300195277828,
+          "std": 11.3957318093114
+        }
+      },
+      "LTeamID": {
+        "dtype": "int64",
+        "non_null": 140825,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 370,
+        "numeric_stats": {
+          "min": 3101.0,
+          "max": 3481.0,
+          "mean": 3285.662758743121,
+          "std": 105.74228135840204
+        }
+      },
+      "LScore": {
+        "dtype": "int64",
+        "non_null": 140825,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 103,
+        "numeric_stats": {
+          "min": 11.0,
+          "max": 130.0,
+          "mean": 57.516534706195635,
+          "std": 10.793428330816957
+        }
+      },
+      "WLoc": {
+        "dtype": "object",
+        "non_null": 140825,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 3,
+        "top_values": {
+          "H": 79746,
+          "A": 50607,
+          "N": 10472
+        }
+      },
+      "NumOT": {
+        "dtype": "int64",
+        "non_null": 140825,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 6,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 5.0,
+          "mean": 0.04001420202378839,
+          "std": 0.2286985271694195
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 1998,
+        "DayNum": 18,
+        "WTeamID": 3104,
+        "WScore": 91,
+        "LTeamID": 3202,
+        "LScore": 41,
+        "WLoc": "H",
+        "NumOT": 0
+      },
+      {
+        "Season": 1998,
+        "DayNum": 18,
+        "WTeamID": 3163,
+        "WScore": 87,
+        "LTeamID": 3221,
+        "LScore": 76,
+        "WLoc": "H",
+        "NumOT": 0
+      },
+      {
+        "Season": 1998,
+        "DayNum": 18,
+        "WTeamID": 3222,
+        "WScore": 66,
+        "LTeamID": 3261,
+        "LScore": 59,
+        "WLoc": "H",
+        "NumOT": 0
+      },
+      {
+        "Season": 1998,
+        "DayNum": 18,
+        "WTeamID": 3307,
+        "WScore": 69,
+        "LTeamID": 3365,
+        "LScore": 62,
+        "WLoc": "H",
+        "NumOT": 0
+      },
+      {
+        "Season": 1998,
+        "DayNum": 18,
+        "WTeamID": 3349,
+        "WScore": 115,
+        "LTeamID": 3411,
+        "LScore": 35,
+        "WLoc": "H",
+        "NumOT": 0
+      }
+    ]
+  },
+  "WRegularSeasonDetailedResults.csv": {
+    "file": "WRegularSeasonDetailedResults.csv",
+    "shape": {
+      "rows": 85505,
+      "columns": 34
+    },
+    "columns": [
+      "Season",
+      "DayNum",
+      "WTeamID",
+      "WScore",
+      "LTeamID",
+      "LScore",
+      "WLoc",
+      "NumOT",
+      "WFGM",
+      "WFGA",
+      "WFGM3",
+      "WFGA3",
+      "WFTM",
+      "WFTA",
+      "WOR",
+      "WDR",
+      "WAst",
+      "WTO",
+      "WStl",
+      "WBlk",
+      "WPF",
+      "LFGM",
+      "LFGA",
+      "LFGM3",
+      "LFGA3",
+      "LFTM",
+      "LFTA",
+      "LOR",
+      "LDR",
+      "LAst",
+      "LTO",
+      "LStl",
+      "LBlk",
+      "LPF"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 26.257,
+    "season_range": {
+      "min": 2010,
+      "max": 2026
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 17,
+        "numeric_stats": {
+          "min": 2010.0,
+          "max": 2026.0,
+          "mean": 2017.8824162329688,
+          "std": 4.856438991889819
+        }
+      },
+      "DayNum": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 133,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 132.0,
+          "mean": 68.82785801999883,
+          "std": 36.31273628046365
+        }
+      },
+      "WTeamID": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 367,
+        "numeric_stats": {
+          "min": 3101.0,
+          "max": 3481.0,
+          "mean": 3285.43590433308,
+          "std": 104.25937633818032
+        }
+      },
+      "WScore": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 104,
+        "numeric_stats": {
+          "min": 30.0,
+          "max": 140.0,
+          "mean": 71.80416349921057,
+          "std": 11.567865581091475
+        }
+      },
+      "LTeamID": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 367,
+        "numeric_stats": {
+          "min": 3101.0,
+          "max": 3481.0,
+          "mean": 3286.9804923688675,
+          "std": 105.78837490937856
+        }
+      },
+      "LScore": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 100,
+        "numeric_stats": {
+          "min": 11.0,
+          "max": 130.0,
+          "mean": 57.25868662651307,
+          "std": 10.945183951072417
+        }
+      },
+      "WLoc": {
+        "dtype": "object",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 3,
+        "top_values": {
+          "H": 47261,
+          "A": 30681,
+          "N": 7563
+        }
+      },
+      "NumOT": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 6,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 5.0,
+          "mean": 0.05141219811706918,
+          "std": 0.25810205856608837
+        }
+      },
+      "WFGM": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 47,
+        "numeric_stats": {
+          "min": 9.0,
+          "max": 58.0,
+          "mean": 25.885796152271798,
+          "std": 4.991710239967346
+        }
+      },
+      "WFGA": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 77,
+        "numeric_stats": {
+          "min": 30.0,
+          "max": 113.0,
+          "mean": 58.99947371498743,
+          "std": 7.970657336253282
+        }
+      },
+      "WFGM3": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 25,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 30.0,
+          "mean": 6.3167066253435475,
+          "std": 3.131597796628297
+        }
+      },
+      "WFGA3": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 58,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 63.0,
+          "mean": 18.092953628442782,
+          "std": 6.652892929754841
+        }
+      },
+      "WFTM": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 48,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 49.0,
+          "mean": 13.715864569323431,
+          "std": 5.736517169009917
+        }
+      },
+      "WFTA": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 61,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 66.0,
+          "mean": 19.2479971931466,
+          "std": 7.5231850806337714
+        }
+      },
+      "WOR": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 39,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 45.0,
+          "mean": 11.994655283316765,
+          "std": 4.746542525974405
+        }
+      },
+      "WDR": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 48,
+        "numeric_stats": {
+          "min": 3.0,
+          "max": 58.0,
+          "mean": 26.56537044617274,
+          "std": 5.343996608417788
+        }
+      },
+      "WAst": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 43,
+        "numeric_stats": {
+          "min": 1.0,
+          "max": 45.0,
+          "mean": 14.980971872989883,
+          "std": 4.6735771790406835
+        }
+      },
+      "WTO": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 40,
+        "numeric_stats": {
+          "min": 1.0,
+          "max": 40.0,
+          "mean": 15.002222092275305,
+          "std": 4.645336290718295
+        }
+      },
+      "WStl": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 35,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 36.0,
+          "mean": 8.659727501315713,
+          "std": 3.7927188365255504
+        }
+      },
+      "WBlk": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 21,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 23.0,
+          "mean": 3.673714987427636,
+          "std": 2.431769072867205
+        }
+      },
+      "WPF": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 38,
+        "numeric_stats": {
+          "min": 1.0,
+          "max": 42.0,
+          "mean": 16.047084965791473,
+          "std": 4.261476826059985
+        }
+      },
+      "LFGM": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 42,
+        "numeric_stats": {
+          "min": 3.0,
+          "max": 45.0,
+          "mean": 20.886392608619378,
+          "std": 4.447086320571831
+        }
+      },
+      "LFGA": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 81,
+        "numeric_stats": {
+          "min": 25.0,
+          "max": 111.0,
+          "mean": 58.000479504122566,
+          "std": 7.980212549875095
+        }
+      },
+      "LFGM3": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 22,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 25.0,
+          "mean": 4.9831471843751824,
+          "std": 2.6568470073473405
+        }
+      },
+      "LFGA3": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 60,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 80.0,
+          "mean": 17.999836266884977,
+          "std": 6.455422769414279
+        }
+      },
+      "LFTM": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 38,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 37.0,
+          "mean": 10.502754224899128,
+          "std": 4.930955263844882
+        }
+      },
+      "LFTA": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 52,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 52.0,
+          "mean": 15.48058008303608,
+          "std": 6.6224433011728605
+        }
+      },
+      "LOR": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 36,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 38.0,
+          "mean": 11.20996432957137,
+          "std": 4.635877813176133
+        }
+      },
+      "LDR": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 46,
+        "numeric_stats": {
+          "min": 1.0,
+          "max": 53.0,
+          "mean": 22.31993450675399,
+          "std": 4.938710095348472
+        }
+      },
+      "LAst": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 34,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 34.0,
+          "mean": 10.929770188877843,
+          "std": 3.8039274725857997
+        }
+      },
+      "LTO": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 49,
+        "numeric_stats": {
+          "min": 1.0,
+          "max": 49.0,
+          "mean": 17.120484182211566,
+          "std": 5.276002637053046
+        }
+      },
+      "LStl": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 27,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 26.0,
+          "mean": 7.112274136015437,
+          "std": 3.1916840426559854
+        }
+      },
+      "LBlk": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 19,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 21.0,
+          "mean": 2.8146307233495116,
+          "std": 2.0587253865254493
+        }
+      },
+      "LPF": {
+        "dtype": "int64",
+        "non_null": 85505,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 40,
+        "numeric_stats": {
+          "min": 3.0,
+          "max": 47.0,
+          "mean": 18.174352377053975,
+          "std": 4.558495231414066
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 2010,
+        "DayNum": 11,
+        "WTeamID": 3103,
+        "WScore": 63,
+        "LTeamID": 3237,
+        "LScore": 49,
+        "WLoc": "H",
+        "NumOT": 0,
+        "WFGM": 23,
+        "WFGA": 54,
+        "WFGM3": 5,
+        "WFGA3": 9,
+        "WFTM": 12,
+        "WFTA": 19,
+        "WOR": 10,
+        "WDR": 26,
+        "WAst": 14,
+        "WTO": 18,
+        "WStl": 7,
+        "WBlk": 0,
+        "WPF": 15,
+        "LFGM": 20,
+        "LFGA": 54,
+        "LFGM3": 3,
+        "LFGA3": 13,
+        "LFTM": 6,
+        "LFTA": 10,
+        "LOR": 11,
+        "LDR": 27,
+        "LAst": 11,
+        "LTO": 23,
+        "LStl": 7,
+        "LBlk": 6,
+        "LPF": 19
+      },
+      {
+        "Season": 2010,
+        "DayNum": 11,
+        "WTeamID": 3104,
+        "WScore": 73,
+        "LTeamID": 3399,
+        "LScore": 68,
+        "WLoc": "N",
+        "NumOT": 0,
+        "WFGM": 26,
+        "WFGA": 62,
+        "WFGM3": 5,
+        "WFGA3": 12,
+        "WFTM": 16,
+        "WFTA": 28,
+        "WOR": 16,
+        "WDR": 31,
+        "WAst": 15,
+        "WTO": 20,
+        "WStl": 5,
+        "WBlk": 2,
+        "WPF": 25,
+        "LFGM": 25,
+        "LFGA": 63,
+        "LFGM3": 4,
+        "LFGA3": 21,
+        "LFTM": 14,
+        "LFTA": 27,
+        "LOR": 14,
+        "LDR": 26,
+        "LAst": 7,
+        "LTO": 20,
+        "LStl": 4,
+        "LBlk": 2,
+        "LPF": 27
+      },
+      {
+        "Season": 2010,
+        "DayNum": 11,
+        "WTeamID": 3110,
+        "WScore": 71,
+        "LTeamID": 3224,
+        "LScore": 59,
+        "WLoc": "A",
+        "NumOT": 0,
+        "WFGM": 29,
+        "WFGA": 62,
+        "WFGM3": 6,
+        "WFGA3": 15,
+        "WFTM": 7,
+        "WFTA": 12,
+        "WOR": 14,
+        "WDR": 23,
+        "WAst": 18,
+        "WTO": 13,
+        "WStl": 6,
+        "WBlk": 2,
+        "WPF": 17,
+        "LFGM": 19,
+        "LFGA": 58,
+        "LFGM3": 2,
+        "LFGA3": 14,
+        "LFTM": 19,
+        "LFTA": 23,
+        "LOR": 17,
+        "LDR": 23,
+        "LAst": 8,
+        "LTO": 15,
+        "LStl": 6,
+        "LBlk": 0,
+        "LPF": 15
+      },
+      {
+        "Season": 2010,
+        "DayNum": 11,
+        "WTeamID": 3111,
+        "WScore": 63,
+        "LTeamID": 3267,
+        "LScore": 58,
+        "WLoc": "A",
+        "NumOT": 0,
+        "WFGM": 27,
+        "WFGA": 52,
+        "WFGM3": 4,
+        "WFGA3": 11,
+        "WFTM": 5,
+        "WFTA": 9,
+        "WOR": 6,
+        "WDR": 40,
+        "WAst": 14,
+        "WTO": 27,
+        "WStl": 5,
+        "WBlk": 10,
+        "WPF": 18,
+        "LFGM": 18,
+        "LFGA": 74,
+        "LFGM3": 6,
+        "LFGA3": 26,
+        "LFTM": 16,
+        "LFTA": 25,
+        "LOR": 22,
+        "LDR": 22,
+        "LAst": 15,
+        "LTO": 11,
+        "LStl": 14,
+        "LBlk": 5,
+        "LPF": 14
+      },
+      {
+        "Season": 2010,
+        "DayNum": 11,
+        "WTeamID": 3119,
+        "WScore": 74,
+        "LTeamID": 3447,
+        "LScore": 70,
+        "WLoc": "H",
+        "NumOT": 1,
+        "WFGM": 30,
+        "WFGA": 74,
+        "WFGM3": 7,
+        "WFGA3": 20,
+        "WFTM": 7,
+        "WFTA": 11,
+        "WOR": 14,
+        "WDR": 33,
+        "WAst": 18,
+        "WTO": 11,
+        "WStl": 5,
+        "WBlk": 3,
+        "WPF": 18,
+        "LFGM": 25,
+        "LFGA": 74,
+        "LFGM3": 9,
+        "LFGA3": 17,
+        "LFTM": 11,
+        "LFTA": 21,
+        "LOR": 21,
+        "LDR": 32,
+        "LAst": 12,
+        "LTO": 14,
+        "LStl": 4,
+        "LBlk": 2,
+        "LPF": 14
+      }
+    ]
+  },
+  "WSeasons.csv": {
+    "file": "WSeasons.csv",
+    "shape": {
+      "rows": 29,
+      "columns": 6
+    },
+    "columns": [
+      "Season",
+      "DayZero",
+      "RegionW",
+      "RegionX",
+      "RegionY",
+      "RegionZ"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 0.009,
+    "season_range": {
+      "min": 1998,
+      "max": 2026
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 29,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 29,
+        "numeric_stats": {
+          "min": 1998.0,
+          "max": 2026.0,
+          "mean": 2012.0,
+          "std": 8.514693182963201
+        }
+      },
+      "DayZero": {
+        "dtype": "object",
+        "non_null": 29,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 29,
+        "top_values": {
+          "10/27/1997": 1,
+          "10/26/1998": 1,
+          "11/01/1999": 1,
+          "10/30/2000": 1,
+          "10/29/2001": 1
+        }
+      },
+      "RegionW": {
+        "dtype": "object",
+        "non_null": 29,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 17,
+        "top_values": {
+          "East": 7,
+          "Bridgeport": 4,
+          "Albany": 3,
+          "Dallas": 2,
+          "Lincoln": 1
+        }
+      },
+      "RegionX": {
+        "dtype": "object",
+        "non_null": 29,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 21,
+        "top_values": {
+          "Spokane": 5,
+          "Midwest": 3,
+          "West": 2,
+          "Mideast": 2,
+          "Norfolk": 1
+        }
+      },
+      "RegionY": {
+        "dtype": "object",
+        "non_null": 29,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 18,
+        "top_values": {
+          "Mideast": 5,
+          "Greensboro": 3,
+          "KansasCity": 3,
+          "Lexington": 2,
+          "OklahomaCity": 2
+        }
+      },
+      "RegionZ": {
+        "dtype": "object",
+        "non_null": 29,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 21,
+        "top_values": {
+          "West": 5,
+          "OklahomaCity": 2,
+          "Raleigh": 2,
+          "Midwest": 2,
+          "Philadelphia": 2
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 1998,
+        "DayZero": "10/27/1997",
+        "RegionW": "East",
+        "RegionX": "Midwest",
+        "RegionY": "Mideast",
+        "RegionZ": "West"
+      },
+      {
+        "Season": 1999,
+        "DayZero": "10/26/1998",
+        "RegionW": "East",
+        "RegionX": "Mideast",
+        "RegionY": "Midwest",
+        "RegionZ": "West"
+      },
+      {
+        "Season": 2000,
+        "DayZero": "11/01/1999",
+        "RegionW": "East",
+        "RegionX": "Midwest",
+        "RegionY": "Mideast",
+        "RegionZ": "West"
+      },
+      {
+        "Season": 2001,
+        "DayZero": "10/30/2000",
+        "RegionW": "East",
+        "RegionX": "Midwest",
+        "RegionY": "Mideast",
+        "RegionZ": "West"
+      },
+      {
+        "Season": 2002,
+        "DayZero": "10/29/2001",
+        "RegionW": "East",
+        "RegionX": "West",
+        "RegionY": "Mideast",
+        "RegionZ": "Midwest"
+      }
+    ]
+  },
+  "WSecondaryTourneyCompactResults.csv": {
+    "file": "WSecondaryTourneyCompactResults.csv",
+    "shape": {
+      "rows": 906,
+      "columns": 9
+    },
+    "columns": [
+      "Season",
+      "DayNum",
+      "WTeamID",
+      "WScore",
+      "LTeamID",
+      "LScore",
+      "WLoc",
+      "NumOT",
+      "SecondaryTourney"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 0.151,
+    "season_range": {
+      "min": 2013,
+      "max": 2025
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 906,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 12,
+        "numeric_stats": {
+          "min": 2013.0,
+          "max": 2025.0,
+          "mean": 2018.8377483443708,
+          "std": 3.9223328562147843
+        }
+      },
+      "DayNum": {
+        "dtype": "int64",
+        "non_null": 906,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 16,
+        "numeric_stats": {
+          "min": 135.0,
+          "max": 152.0,
+          "mean": 139.04525386313466,
+          "std": 3.8285269142677247
+        }
+      },
+      "WTeamID": {
+        "dtype": "int64",
+        "non_null": 906,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 219,
+        "numeric_stats": {
+          "min": 3101.0,
+          "max": 3475.0,
+          "mean": 3302.3432671081678,
+          "std": 107.46993023583086
+        }
+      },
+      "WScore": {
+        "dtype": "int64",
+        "non_null": 906,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 58,
+        "numeric_stats": {
+          "min": 45.0,
+          "max": 107.0,
+          "mean": 71.79028697571744,
+          "std": 10.663624052291205
+        }
+      },
+      "LTeamID": {
+        "dtype": "int64",
+        "non_null": 906,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 293,
+        "numeric_stats": {
+          "min": 3101.0,
+          "max": 3478.0,
+          "mean": 3288.8940397350993,
+          "std": 106.54950774074513
+        }
+      },
+      "LScore": {
+        "dtype": "int64",
+        "non_null": 906,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 61,
+        "numeric_stats": {
+          "min": 32.0,
+          "max": 99.0,
+          "mean": 60.19867549668874,
+          "std": 10.656579862993057
+        }
+      },
+      "WLoc": {
+        "dtype": "object",
+        "non_null": 906,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 3,
+        "top_values": {
+          "H": 586,
+          "A": 239,
+          "N": 81
+        }
+      },
+      "NumOT": {
+        "dtype": "int64",
+        "non_null": 906,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 4,
+        "numeric_stats": {
+          "min": 0.0,
+          "max": 3.0,
+          "mean": 0.05739514348785872,
+          "std": 0.2917189530292815
+        }
+      },
+      "SecondaryTourney": {
+        "dtype": "object",
+        "non_null": 906,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 3,
+        "top_values": {
+          "WNIT": 703,
+          "WBI": 141,
+          "WBIT": 62
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 2013,
+        "DayNum": 135,
+        "WTeamID": 3120,
+        "WScore": 80,
+        "LTeamID": 3412,
+        "LScore": 57,
+        "WLoc": "H",
+        "NumOT": 0,
+        "SecondaryTourney": "WNIT"
+      },
+      {
+        "Season": 2013,
+        "DayNum": 135,
+        "WTeamID": 3140,
+        "WScore": 69,
+        "LTeamID": 3226,
+        "LScore": 54,
+        "WLoc": "H",
+        "NumOT": 0,
+        "SecondaryTourney": "WNIT"
+      },
+      {
+        "Season": 2013,
+        "DayNum": 135,
+        "WTeamID": 3158,
+        "WScore": 72,
+        "LTeamID": 3297,
+        "LScore": 70,
+        "WLoc": "A",
+        "NumOT": 0,
+        "SecondaryTourney": "WBI"
+      },
+      {
+        "Season": 2013,
+        "DayNum": 135,
+        "WTeamID": 3183,
+        "WScore": 60,
+        "LTeamID": 3281,
+        "LScore": 58,
+        "WLoc": "A",
+        "NumOT": 0,
+        "SecondaryTourney": "WNIT"
+      },
+      {
+        "Season": 2013,
+        "DayNum": 135,
+        "WTeamID": 3189,
+        "WScore": 68,
+        "LTeamID": 3184,
+        "LScore": 61,
+        "WLoc": "H",
+        "NumOT": 0,
+        "SecondaryTourney": "WBI"
+      }
+    ]
+  },
+  "WSecondaryTourneyTeams.csv": {
+    "file": "WSecondaryTourneyTeams.csv",
+    "shape": {
+      "rows": 904,
+      "columns": 3
+    },
+    "columns": [
+      "Season",
+      "SecondaryTourney",
+      "TeamID"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 0.066,
+    "season_range": {
+      "min": 2013,
+      "max": 2025
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 904,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 12,
+        "numeric_stats": {
+          "min": 2013.0,
+          "max": 2025.0,
+          "mean": 2018.7610619469026,
+          "std": 3.947101685678822
+        }
+      },
+      "SecondaryTourney": {
+        "dtype": "object",
+        "non_null": 904,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 3,
+        "top_values": {
+          "WNIT": 704,
+          "WBI": 136,
+          "WBIT": 64
+        }
+      },
+      "TeamID": {
+        "dtype": "int64",
+        "non_null": 904,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 296,
+        "numeric_stats": {
+          "min": 3101.0,
+          "max": 3478.0,
+          "mean": 3290.4391592920356,
+          "std": 106.80140984466156
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 2013,
+        "SecondaryTourney": "WNIT",
+        "TeamID": 3103
+      },
+      {
+        "Season": 2013,
+        "SecondaryTourney": "WNIT",
+        "TeamID": 3111
+      },
+      {
+        "Season": 2013,
+        "SecondaryTourney": "WNIT",
+        "TeamID": 3114
+      },
+      {
+        "Season": 2013,
+        "SecondaryTourney": "WNIT",
+        "TeamID": 3116
+      },
+      {
+        "Season": 2013,
+        "SecondaryTourney": "WNIT",
+        "TeamID": 3119
+      }
+    ]
+  },
+  "WTeamConferences.csv": {
+    "file": "WTeamConferences.csv",
+    "shape": {
+      "rows": 9853,
+      "columns": 3
+    },
+    "columns": [
+      "Season",
+      "TeamID",
+      "ConfAbbrev"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 0.736,
+    "season_range": {
+      "min": 1998,
+      "max": 2026
+    },
+    "column_profiles": {
+      "Season": {
+        "dtype": "int64",
+        "non_null": 9853,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 29,
+        "numeric_stats": {
+          "min": 1998.0,
+          "max": 2026.0,
+          "mean": 2012.3827260732771,
+          "std": 8.317685714995374
+        }
+      },
+      "TeamID": {
+        "dtype": "int64",
+        "non_null": 9853,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 370,
+        "numeric_stats": {
+          "min": 3101.0,
+          "max": 3481.0,
+          "mean": 3285.5446057038466,
+          "std": 105.14582108295717
+        }
+      },
+      "ConfAbbrev": {
+        "dtype": "object",
+        "non_null": 9853,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 37,
+        "top_values": {
+          "a_ten": 393,
+          "sec": 380,
+          "acc": 371,
+          "cusa": 370,
+          "big_east": 370
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "Season": 1998,
+        "TeamID": 3102,
+        "ConfAbbrev": "wac"
+      },
+      {
+        "Season": 1998,
+        "TeamID": 3103,
+        "ConfAbbrev": "mac"
+      },
+      {
+        "Season": 1998,
+        "TeamID": 3104,
+        "ConfAbbrev": "sec"
+      },
+      {
+        "Season": 1998,
+        "TeamID": 3106,
+        "ConfAbbrev": "swac"
+      },
+      {
+        "Season": 1998,
+        "TeamID": 3108,
+        "ConfAbbrev": "swac"
+      }
+    ]
+  },
+  "WTeams.csv": {
+    "file": "WTeams.csv",
+    "shape": {
+      "rows": 379,
+      "columns": 2
+    },
+    "columns": [
+      "TeamID",
+      "TeamName"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 0.027,
+    "season_range": {
+      "min": null,
+      "max": null
+    },
+    "column_profiles": {
+      "TeamID": {
+        "dtype": "int64",
+        "non_null": 379,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 379,
+        "numeric_stats": {
+          "min": 3101.0,
+          "max": 3481.0,
+          "mean": 3290.9683377308706,
+          "std": 109.92854365056563
+        }
+      },
+      "TeamName": {
+        "dtype": "object",
+        "non_null": 379,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 379,
+        "top_values": {
+          "Abilene Chr": 1,
+          "Arizona": 1,
+          "Alabama": 1,
+          "Alabama A&M": 1,
+          "Alabama St": 1
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "TeamID": 3101,
+        "TeamName": "Abilene Chr"
+      },
+      {
+        "TeamID": 3102,
+        "TeamName": "Air Force"
+      },
+      {
+        "TeamID": 3103,
+        "TeamName": "Akron"
+      },
+      {
+        "TeamID": 3104,
+        "TeamName": "Alabama"
+      },
+      {
+        "TeamID": 3105,
+        "TeamName": "Alabama A&M"
+      }
+    ]
+  },
+  "WTeamSpellings.csv": {
+    "file": "WTeamSpellings.csv",
+    "shape": {
+      "rows": 1171,
+      "columns": 2
+    },
+    "columns": [
+      "TeamNameSpelling",
+      "TeamID"
+    ],
+    "duplicate_rows": 0,
+    "missing_cells": 0,
+    "missing_pct": 0.0,
+    "memory_mb": 0.086,
+    "season_range": {
+      "min": null,
+      "max": null
+    },
+    "column_profiles": {
+      "TeamNameSpelling": {
+        "dtype": "object",
+        "non_null": 1171,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 1171,
+        "top_values": {
+          "a&m-corpus chris": 1,
+          "appalachian state": 1,
+          "abilene chr": 1,
+          "abilene christian": 1,
+          "abilene-christian": 1
+        }
+      },
+      "TeamID": {
+        "dtype": "int64",
+        "non_null": 1171,
+        "null_count": 0,
+        "null_pct": 0.0,
+        "nunique_non_null": 379,
+        "numeric_stats": {
+          "min": 3101.0,
+          "max": 3481.0,
+          "mean": 3293.0239111870196,
+          "std": 106.35118140735834
+        }
+      }
+    },
+    "preview_rows": [
+      {
+        "TeamNameSpelling": "a&m-corpus chris",
+        "TeamID": 3394
+      },
+      {
+        "TeamNameSpelling": "a&m-corpus christi",
+        "TeamID": 3394
+      },
+      {
+        "TeamNameSpelling": "abilene chr",
+        "TeamID": 3101
+      },
+      {
+        "TeamNameSpelling": "abilene christian",
+        "TeamID": 3101
+      },
+      {
+        "TeamNameSpelling": "abilene-christian",
+        "TeamID": 3101
+      }
+    ]
+  }
+}

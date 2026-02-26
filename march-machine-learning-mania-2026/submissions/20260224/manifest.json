@@ -1,0 +1,54 @@
+{
+  "generated_at_utc": "2026-02-23T21:04:43Z",
+  "source_sample_submission": "input\\SampleSubmissionStage2.csv",
+  "max_files": 5,
+  "seed": 2026,
+  "candidates": [
+    {
+      "file": "submissions\\20260224\\20260224_sub01_baseline_050.csv",
+      "strategy": "baseline_050",
+      "rows": 132133,
+      "pred_mean": 0.5,
+      "pred_std": 0.0,
+      "pred_min": 0.5,
+      "pred_max": 0.5
+    },
+    {
+      "file": "submissions\\20260224\\20260224_sub02_constant_052.csv",
+      "strategy": "constant_052",
+      "rows": 132133,
+      "pred_mean": 0.5199999999999997,
+      "pred_std": 1.1575229056256103e-12,
+      "pred_min": 0.52,
+      "pred_max": 0.52
+    },
+    {
+      "file": "submissions\\20260224\\20260224_sub03_constant_048.csv",
+      "strategy": "constant_048",
+      "rows": 132133,
+      "pred_mean": 0.48000000000000037,
+      "pred_std": 1.351202045167513e-12,
+      "pred_min": 0.48,
+      "pred_max": 0.48
+    },
+    {
+      "file": "submissions\\20260224\\20260224_sub04_jitter_sd002.csv",
+      "strategy": "jitter_sd002",
+      "rows": 132133,
+      "pred_mean": 0.5000422440674986,
+      "pred_std": 0.019961799215881985,
+      "pred_min": 0.41598724034822465,
+      "pred_max": 0.5824529015274881
+    },
+    {
+      "file": "submissions\\20260224\\20260224_sub05_jitter_sd005.csv",
+      "strategy": "jitter_sd005",
+      "rows": 132133,
+      "pred_mean": 0.5001241249069575,
+      "pred_std": 0.04998962284152144,
+      "pred_min": 0.2806094594785947,
+      "pred_max": 0.7225852871398345
+    }
+  ],
+  "kaggle_submit_hint": "kaggle competitions submit -c march-machine-learning-mania-2026 -f <file.csv> -m \"note\""
+}
