@@ -2,7 +2,7 @@
 */.ipynb_checkpoints
 */.ipynb_checkpoints/*
 */venv
-# *.csv
+*.csv
 *.so
 *__pycache__/*
 */__pycache__/
@@ -14,3 +14,7 @@
 .config
 # */**/about/
 march-machine-learning-mania-2026/input/MMasseyOrdinals.csv
+
+# Local env/config
+.env
+.env.*
