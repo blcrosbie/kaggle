@@ -2,10 +2,14 @@
 */.ipynb_checkpoints
 */.ipynb_checkpoints/*
 */venv
+*/.venv/*
+
+**/data/**
+**/reports/**
 # *.csv
 *.so
 *__pycache__/*
-*/__pycache__/
+**/__pycache__/**
 */__pycache__/*
 */utils/__pycache__/*
 *.DS_Store
@@ -14,3 +18,5 @@
 .config
 # */**/about/
 march-machine-learning-mania-2026/input/MMasseyOrdinals.csv
+
+*/submissions/*
