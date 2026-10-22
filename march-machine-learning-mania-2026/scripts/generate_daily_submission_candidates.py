@@ -4,13 +4,12 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import json
-from dataclasses import dataclass, asdict
-from datetime import datetime
+import random
+from dataclasses import asdict, dataclass
+from datetime import datetime, timezone
 from pathlib import Path
-
-import numpy as np
-import pandas as pd
 
 
 @dataclass
@@ -24,25 +23,55 @@ class CandidateStats:
     pred_max: float
 
 
-def _build_predictions(base: pd.Series, strategy: str, rng: np.random.Generator) -> np.ndarray:
-    x = base.to_numpy(dtype=float)
-    if strategy == "baseline_050":
-        preds = np.full_like(x, 0.50)
-    elif strategy == "constant_052":
-        preds = np.full_like(x, 0.52)
-    elif strategy == "constant_048":
-        preds = np.full_like(x, 0.48)
+def _read_submission(path: Path) -> tuple[list[str], list[float]]:
+    ids: list[str] = []
+    preds: list[float] = []
+    with path.open("r", newline="", encoding="utf-8") as handle:
+        reader = csv.DictReader(handle)
+        if reader.fieldnames != ["ID", "Pred"]:
+            raise ValueError(f"{path} must contain exactly ID and Pred columns")
+        for row in reader:
+            ids.append(row["ID"])
+            preds.append(float(row["Pred"]))
+    return ids, preds
+
+
+def _write_submission(path: Path, ids: list[str], preds: list[float]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.writer(handle)
+        writer.writerow(["ID", "Pred"])
+        for game_id, pred in zip(ids, preds):
+            writer.writerow([game_id, f"{pred:.6f}"])
+
+
+def _stats(values: list[float]) -> tuple[float, float, float, float]:
+    if not values:
+        return 0.0, 0.0, 0.0, 0.0
+    mean = sum(values) / len(values)
+    variance = sum((value - mean) ** 2 for value in values) / len(values)
+    return mean, variance ** 0.5, min(values), max(values)
+
+
+def _build_predictions(base: list[float], strategy: str, rng: random.Random) -> list[float]:
+    if strategy == "base":
+        preds = base
+    elif strategy == "base_pull_50":
+        preds = [0.85 * value + 0.15 * 0.50 for value in base]
+    elif strategy == "base_push":
+        preds = [0.50 + 1.08 * (value - 0.50) for value in base]
     elif strategy == "jitter_sd002":
-        preds = 0.50 + rng.normal(0.0, 0.02, size=x.shape[0])
+        preds = [value + rng.gauss(0.0, 0.02) for value in base]
     elif strategy == "jitter_sd005":
-        preds = 0.50 + rng.normal(0.0, 0.05, size=x.shape[0])
+        preds = [value + rng.gauss(0.0, 0.05) for value in base]
     else:
         raise ValueError(f"Unknown strategy: {strategy}")
-    return np.clip(preds, 0.001, 0.999)
+    return [min(0.999, max(0.001, value)) for value in preds]
 
 
 def generate_candidates(
     sample_submission: Path,
+    base_submission: Path | None,
     output_dir: Path,
     date_tag: str,
     max_files: int,
@@ -50,51 +79,60 @@ def generate_candidates(
 ) -> list[CandidateStats]:
     if max_files < 1 or max_files > 5:
         raise ValueError("max_files must be between 1 and 5")
-    df = pd.read_csv(sample_submission)
-    if "ID" not in df.columns or "Pred" not in df.columns:
-        raise ValueError("Sample submission must contain ID and Pred columns")
+
+    sample_ids, sample_preds = _read_submission(sample_submission)
+    base_ids, base_preds = (sample_ids, sample_preds)
+    if base_submission is not None:
+        base_ids, base_preds = _read_submission(base_submission)
+        if base_ids != sample_ids:
+            raise ValueError("Base submission IDs must match the sample submission IDs exactly")
 
     strategies = [
-        "baseline_050",
-        "constant_052",
-        "constant_048",
+        "base",
+        "base_pull_50",
+        "base_push",
         "jitter_sd002",
         "jitter_sd005",
     ][:max_files]
 
     run_dir = output_dir / date_tag
     run_dir.mkdir(parents=True, exist_ok=True)
-    rng = np.random.default_rng(seed)
+    rng = random.Random(seed)
     stats: list[CandidateStats] = []
 
-    for i, strategy in enumerate(strategies, start=1):
-        out_df = df[["ID"]].copy()
-        out_df["Pred"] = _build_predictions(df["Pred"], strategy, rng)
-        file_name = f"{date_tag}_sub{i:02d}_{strategy}.csv"
+    for index, strategy in enumerate(strategies, start=1):
+        preds = _build_predictions(base_preds, strategy, rng)
+        file_name = f"{date_tag}_sub{index:02d}_{strategy}.csv"
         out_path = run_dir / file_name
-        out_df.to_csv(out_path, index=False, float_format="%.6f")
+        _write_submission(out_path, sample_ids, preds)
+        pred_mean, pred_std, pred_min, pred_max = _stats(preds)
         stats.append(
             CandidateStats(
                 file=str(out_path),
                 strategy=strategy,
-                rows=int(out_df.shape[0]),
-                pred_mean=float(out_df["Pred"].mean()),
-                pred_std=float(out_df["Pred"].std()),
-                pred_min=float(out_df["Pred"].min()),
-                pred_max=float(out_df["Pred"].max()),
+                rows=len(preds),
+                pred_mean=pred_mean,
+                pred_std=pred_std,
+                pred_min=pred_min,
+                pred_max=pred_max,
             )
         )
 
     manifest = {
-        "generated_at_utc": datetime.utcnow().isoformat(timespec="seconds") + "Z",
+        "generated_at_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "source_sample_submission": str(sample_submission),
+        "base_submission": str(base_submission) if base_submission else None,
         "max_files": max_files,
         "seed": seed,
-        "candidates": [asdict(s) for s in stats],
-        "kaggle_submit_hint": "kaggle competitions submit -c march-machine-learning-mania-2026 -f <file.csv> -m \"note\"",
+        "candidates": [asdict(item) for item in stats],
+        "kaggle_submit_hint": 'kaggle competitions submit -c march-machine-learning-mania-2026 -f <file.csv> -m "note"',
     }
     (run_dir / "manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
-    pd.DataFrame([asdict(s) for s in stats]).to_csv(run_dir / "manifest.csv", index=False)
+    with (run_dir / "manifest.csv").open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=list(asdict(stats[0]).keys()))
+        writer.writeheader()
+        for item in stats:
+            writer.writerow(asdict(item))
     return stats
 
 
@@ -104,6 +142,12 @@ def main() -> None:
         "--sample-submission",
         type=Path,
         default=Path("input") / "SampleSubmissionStage2.csv",
+    )
+    parser.add_argument(
+        "--base-submission",
+        type=Path,
+        default=None,
+        help="Optional base submission to perturb instead of using the sample baseline.",
     )
     parser.add_argument("--output-dir", type=Path, default=Path("submissions"))
     parser.add_argument(
@@ -118,6 +162,7 @@ def main() -> None:
 
     stats = generate_candidates(
         sample_submission=args.sample_submission,
+        base_submission=args.base_submission,
         output_dir=args.output_dir,
         date_tag=args.date_tag,
         max_files=args.max_files,
