@@ -2,10 +2,14 @@
 */.ipynb_checkpoints
 */.ipynb_checkpoints/*
 */venv
-*.csv
+*/.venv/*
+
+**/data/**
+**/reports/**
+# *.csv
 *.so
 *__pycache__/*
-*/__pycache__/
+**/__pycache__/**
 */__pycache__/*
 */utils/__pycache__/*
 *.DS_Store
@@ -15,6 +19,10 @@
 # */**/about/
 march-machine-learning-mania-2026/input/MMasseyOrdinals.csv
 
-# Local env/config
+*/submissions/*
+!march-machine-learning-mania-2026/submissions/stage2_refresh_market**.csv
+
+# credentials - never commit
+kaggle.json
 .env
-.env.*
+*/.env

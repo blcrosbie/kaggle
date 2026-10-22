@@ -1,0 +1,13 @@
+kaggle>=1.7
+polars
+pandas
+pyarrow
+numpy
+scipy
+scikit-learn
+statsmodels
+matplotlib
+plotly
+jupyterlab
+ruptures
+stumpy
