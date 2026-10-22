@@ -11,7 +11,7 @@
 *.DS_Store
 
 *.gpkg
-.config
+
 # */**/about/
 march-machine-learning-mania-2026/input/MMasseyOrdinals.csv
 

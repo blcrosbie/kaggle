@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enefit-prosumer"
+version = "0.1.0"
+description = "A reusable forecasting pipeline for Kaggle's Enefit prosumer energy behavior competition."
+requires-python = ">=3.10"
+dependencies = [
+    "holidays",
+    "joblib",
+    "numpy",
+    "pandas",
+    "polars",
+    "pyarrow",
+    "scikit-learn",
+    "xgboost",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+geo = ["geopandas", "plotly", "shapely"]
+notebooks = ["jupyterlab", "matplotlib", "seaborn", "optuna"]
+
+[project.scripts]
+enefit-prosumer = "enefit_prosumer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
