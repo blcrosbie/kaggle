@@ -21,3 +21,8 @@ march-machine-learning-mania-2026/input/MMasseyOrdinals.csv
 
 */submissions/*
 !march-machine-learning-mania-2026/submissions/stage2_refresh_market**.csv
+
+# credentials - never commit
+kaggle.json
+.env
+*/.env
