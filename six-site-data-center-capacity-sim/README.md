@@ -7,7 +7,7 @@ dates into probabilities ("DC2 has a 28% chance of running out of power within 3
 
 > **Synthetic data — demonstration only.** No real facility, employer or infrastructure data is used.
 
-Scope and requirements: [TASK.md](TASK.md) · Methodology: [docs/METHODOLOGY.md](docs/METHODOLOGY.md) ·
+Plain-language field guide (lexicon + sustainability crossover): [GUIDE.md](GUIDE.md) · Scope and requirements: [TASK.md](TASK.md) · Methodology: [docs/METHODOLOGY.md](docs/METHODOLOGY.md) ·
 Data dictionary: [docs/DATA_DICTIONARY.md](docs/DATA_DICTIONARY.md)
 
 ## Status
