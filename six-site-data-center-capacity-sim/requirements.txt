@@ -1,0 +1,5 @@
+# Runtime (Streamlit Community Cloud installs this file)
+streamlit>=1.50
+pandas>=2.2
+numpy>=1.26
+plotly>=5.24

@@ -1,0 +1,7 @@
+# The parent repo ignores **/data/** and */*.csv; the synthetic dataset IS a deliverable.
+!data/
+!data/*.csv
+.venv/
+outputs/
+__pycache__/
+.pytest_cache/

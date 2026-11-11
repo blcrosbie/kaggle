@@ -1,0 +1,58 @@
+# Two themes: Streamlit shows Light / Dark / System in the app menu (top right).
+# Dark = Windows Terminal "Campbell PowerShell"; ui/components.default_dark_theme() makes Dark the first-visit default.
+[theme]
+baseRadius = "none"
+buttonRadius = "none"
+baseFontSize = 15
+showWidgetBorder = true
+showSidebarBorder = true
+font = "Ubuntu:https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+headingFont = "Ubuntu:https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+codeFont = "'Ubuntu Mono':https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap"
+chartCategoricalColors = ["#3A96DD", "#5F8700", "#AF5FFF", "#00875F", "#D7008F", "#3B78FF"]
+
+[theme.dark]
+primaryColor = "#3B78FF"
+backgroundColor = "#012456"
+secondaryBackgroundColor = "#0a2d5e"
+textColor = "#F2F2F2"
+linkColor = "#61D6D6"
+borderColor = "#4a6a99"
+dataframeBorderColor = "#1d4378"
+dataframeHeaderBackgroundColor = "#123a70"
+codeBackgroundColor = "#0a2d5e"
+redColor = "#E74856"
+orangeColor = "#E07B00"
+yellowColor = "#C19C00"
+greenColor = "#13A10E"
+blueColor = "#3B78FF"
+violetColor = "#B4009E"
+
+[theme.dark.sidebar]
+backgroundColor = "#011b42"
+secondaryBackgroundColor = "#0a2d5e"
+
+[theme.light]
+primaryColor = "#0000af"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#eeeeee"
+textColor = "#121212"
+linkColor = "#0000af"
+borderColor = "#8a8a8a"
+dataframeBorderColor = "#d0d0d0"
+dataframeHeaderBackgroundColor = "#dadada"
+redColor = "#d70000"
+orangeColor = "#d75f00"
+yellowColor = "#af8700"
+greenColor = "#008700"
+blueColor = "#0000af"
+
+[theme.light.sidebar]
+backgroundColor = "#eeeeee"
+secondaryBackgroundColor = "#ffffff"
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false
