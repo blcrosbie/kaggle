@@ -1,0 +1,3 @@
+-r requirements.txt
+pytest>=8
+matplotlib>=3.9   # scripts/animate_simulation.py (local deck visuals only)
