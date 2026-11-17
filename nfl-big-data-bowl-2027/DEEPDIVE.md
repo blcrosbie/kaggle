@@ -309,6 +309,8 @@ largest betting handle. Fame = drafted in rounds 1–2. OLS with game-clustered 
   burst (+0.004 SD per °F, p = 0.001; domes/closed roofs = 70 °F), but controlling temperature and wind leaves Thursday
   at −0.19 distance (p < 0.001) and the SNF/MNF distance dip at −0.12 (p = 0.006) — the night-game dip has no rest or
   weather explanation yet (open question: kickoff time vs body clock, travel).
+- Fame doesn't change effort (p = 0.45); early-round players show more game-to-game fingerprint drift (−0.09, p < 0.001),
+  which fits role variety (starters are used in more ways), not anything market-related.
 
 ### B.2 What market data exists (`fetch_markets.py`; full dictionary in `data/markets/MARKETS_README.md`)
 
@@ -429,5 +431,3 @@ there has innocent explanations at these sample sizes.
 | `data/markets/` | market tables + `MARKETS_README.md` + raw API cache (gitignored) |
 | `docs/deepdive/` | figures F1–F6 |
 | `.venv/` | python.org-based environment for torch/CUDA (gitignored) |
-- Fame doesn't change effort (p = 0.45); early-round players show more game-to-game fingerprint drift (−0.09, p < 0.001),
-  which fits role variety (starters are used in more ways), not anything market-related.
